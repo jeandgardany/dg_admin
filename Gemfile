@@ -23,8 +23,12 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 # Rails Admin
 gem 'rails_admin', '~> 2.0'
+# Autenticacao de usuarios
 gem 'devise'
+# Autorizacao
 gem 'cancancan'
+# Incluir Fotos
+gem 'carrierwave'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
