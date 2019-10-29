@@ -33,6 +33,8 @@ gem 'carrierwave', '~> 2.0'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+# Passenger para production com ngix ou apache
+gem 'passenger', '~> 6.0', '>= 6.0.4'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
