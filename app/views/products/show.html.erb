@@ -13,7 +13,7 @@
   <dt><strong><%= "Preço" %>:</strong></dt>
   <dd><%= format_valor(@product.price) %></dd>
   <dt><strong><%= "Foto" %>:</strong></dt>
-  <dd><%= image_tag(@product.photo.thumb.url) %></dd>
+  <dd><%= image_tag(@product.photo.url) %></dd>
   <dt><strong><%= model_class.human_attribute_name(:status) %>:</strong></dt>
   <dd><%= format_status(@product.status) %></dd>
   <dt><strong><%= "Categoria" %>:</strong></dt>

@@ -23,7 +23,7 @@
         <td><%= product.name %></td>
         <td><%= product.description %></td>
         <td><%= format_valor(product.price) %></td>
-        <td><%= image_tag(product.photo.small_thumb.url) %></td>
+        <td><%= image_tag(product.photo.thumb.url) %></td>
         <td><%= format_status(product.status) %></td>
         <td><%= product.category.name %></td>
         <td><%= product.created_at.strftime("%d/%m/%Y") %></td>
