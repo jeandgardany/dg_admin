@@ -28,7 +28,11 @@ gem 'devise'
 # Autorizacao
 gem 'cancancan'
 # Incluir Fotos
-gem 'carrierwave'
+gem 'carrierwave', '~> 2.0'
+# BootStrap
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

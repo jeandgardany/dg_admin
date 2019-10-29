@@ -3,7 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-  enum kind: [:salesman, :manager]
+  enum role: [:salesman, :manager]
   enum status: [:active, :inactive]
   has_many :comissions
   has_many :addresses

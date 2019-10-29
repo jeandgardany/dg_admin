@@ -3,7 +3,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
     create_table :users do |t|
       t.string :name
       t.string :document
-      t.integer :kind
+      t.integer :role
       t.integer :status
       t.text :notes
 

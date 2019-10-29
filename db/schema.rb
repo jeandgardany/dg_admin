@@ -86,7 +86,7 @@ ActiveRecord::Schema.define(version: 2019_10_28_191054) do
     t.text "description"
     t.decimal "price", precision: 10, scale: 2, null: false
     t.string "photo"
-    t.string "status"
+    t.integer "status"
     t.bigint "category_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -109,7 +109,7 @@ ActiveRecord::Schema.define(version: 2019_10_28_191054) do
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "name"
     t.string "document"
-    t.integer "kind"
+    t.integer "role"
     t.integer "status"
     t.text "notes"
     t.datetime "created_at", precision: 6, null: false
