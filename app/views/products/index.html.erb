@@ -5,7 +5,6 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:code) %></th>
       <th><%= model_class.human_attribute_name(:name) %></th>
       <th><%= model_class.human_attribute_name(:description) %></th>
@@ -24,7 +23,7 @@
         <td><%= product.name %></td>
         <td><%= product.description %></td>
         <td><%= format_valor(product.price) %></td>
-        <td><%= link_to image_tag(product.photo.thumb.url), product %></td>
+        <td><%= link_to image_tag(product.photo.large_thumb.url), product %></td>
         <td><%= product.status %></td>
         <td><%= product.category.name %></td>
         <td><%= (product.created_at).strftime("%d/%m/%Y") %></td>

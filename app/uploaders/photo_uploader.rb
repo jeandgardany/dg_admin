@@ -22,26 +22,26 @@ class PhotoUploader < CarrierWave::Uploader::Base
   # end
 
   # Process files as they are uploaded:
-  # process scale: [200, 300]
+  # process scale: [600, 800]
   #
-  # def scale(width, height)
+   def scale(width, height)
      # do something
-  # end
+   end
 
   # Create different versions of your uploaded files:
   # version :thumb do
   #   process resize_to_fit: [50, 50]
   # end
    version :thumb do
-     process resize_to_fill: [50, 50]
+     process resize_to_fill: [600, 800]
    end
 
    version :small_thumb, from_version: :thumb do
-     process resize_to_fill: [300, 300]
+     process resize_to_fill: [300, 400]
    end
    
    version :large_thumb, from_version: :thumb do
-     process resize_to_fill: [400, 400]
+     process resize_to_fill: [50, 50]
    end
 
   # Add a white list of extensions which are allowed to be uploaded.
@@ -58,7 +58,22 @@ class PhotoUploader < CarrierWave::Uploader::Base
   
   #include CarrierWave::MiniMagick
 
-  process resize_to_fit: [300, 300]
+  #process resize_to_fit: [600, 800]
+  def resize_to_limit(width, height)
+      width = dimension_from width
+      height = dimension_from height
+      manipulate! do |img|
+        geometry = Magick::Geometry.new(width, height, 600, 800, Magick::GreaterGeometry)
+        new_img = img.change_geometry(geometry) do |new_width, new_height|
+          img.resize(width, height)
+        end
+        destroy_image(img)
+        new_img = yield(new_img) if block_given?
+        new_img
+      end
+    end
+
+  
 
   #version :thumb do
   #  process resize_to_fill: [50,50]

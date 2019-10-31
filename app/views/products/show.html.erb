@@ -13,7 +13,7 @@
   <dt><strong><%= "Preço" %>:</strong></dt>
   <dd><%= format_valor(@product.price) %></dd>
   <dt><strong><%= "Foto" %>:</strong></dt>
-  <dd><%= image_tag (@product.photo.url) %></dd>
+  <dd><%= image_tag (@product.photo.thumb.url) %></dd>
   <dt><strong><%= model_class.human_attribute_name(:status) %>:</strong></dt>
   <dd><%= format_status(@product.status) %></dd>
   <dt><strong><%= "Categoria" %>:</strong></dt>
@@ -22,3 +22,8 @@
 
 <%= link_to "Home", root_path, :class => 'btn btn-default' %>
 <%= link_to "Lista de Produtos", products_path, :class => 'btn btn-default'  %>
+
+<!--%= image_tag(@product.photo_url.to_s) %-->
+<!--%= image_tag(@product.photo_url(:thumb).to_s) %-->
+<!--%= image_tag(@product.photo_url(:small_thumb).to_s) %-->
+<!--%= image_tag(@product.photo_url(:large_thumb).to_s) %-->
