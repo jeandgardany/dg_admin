@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<%- model_class = Product -%>
+<div class="page-header">
+  <h1 align="center"><%= "Produtos" %></h1>
+</div>
+</head>
+
+ <body>      
+   <% @products.each do |product| %>
+    <div class="div.polaroid">
+      <div class="col-md-3 col-sm-3 col-xs-6">
+       <p><%= link_to image_tag(product.photo.url, class: "img-responsive img-thumbnail"), product %></p>
+      </div>
+   
+    </div>
+   <% end %>
+
+  </body>
+</html>

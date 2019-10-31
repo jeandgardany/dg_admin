@@ -4,3 +4,16 @@
   Static version of css will use Glyphicons sprites by default
   =require twitter-bootstrap-static/sprites
 */
+
+.btn-vencido          { color: #FFF; background-color: #000; border-color: #555; }
+.btn-vencido:hover, .btn-vencido:focus, .btn-vencido:active, .btn-vencido.active, .open .dropdown-toggle.btn-vencido
+                        { color: #FFF; background-color: #888; border-color: #444; }
+.btn-urgente          { color: #FFF; background-color: #FA0818; border-color: #D6080C; }
+.btn-urgente:hover, .btn-urgente:focus, .btn-urgente:active, .btn-urgente.active, .open .dropdown-toggle.btn-urgente
+                        { color: #FFF; background-color: #888; border-color: #444; }
+.btn-atencao          { color: #FFF; background-color: #F5F10A; border-color: #FADA0D; }
+.btn-atencao:hover, .btn-atencao:focus, .btn-atencao:active, .btn-atencao.active, .open .dropdown-toggle.btn-atencao
+                        { color: #FFF; background-color: #888; border-color: #444; }
+.btn-normal          { color: #FFF; background-color: #12E816; border-color: #07BA13; }
+.btn-normal:hover, .btn-normal:focus, .btn-normal:active, .btn-normal.active, .open .dropdown-toggle.btn-normal
+                        { color: #FFF; background-color: #888; border-color: #444; }

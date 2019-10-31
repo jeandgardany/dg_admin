@@ -4,7 +4,11 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+    @products = Product.all.order(id: :desc)
+  end
+  
+  def inputs
+    @products = Product.all.order(id: :desc)
   end
 
   # GET /products/1
