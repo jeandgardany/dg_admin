@@ -33549,3 +33549,513 @@ Processing by ProductsController#inputs as HTML
 Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.4ms | Allocations: 41782)
 
 
+Started GET "/" for 45.234.149.24 at 2019-11-01 00:59:35 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/inputs.html.erb:12
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.6ms | Allocations: 3343)
+Completed 200 OK in 61ms (Views: 60.2ms | ActiveRecord: 0.4ms | Allocations: 41878)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/jean/dg_admin/config/environment.rb:5)
+Started GET "/" for 45.234.149.24 at 2019-11-01 01:00:18 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/inputs.html.erb:12
+  Rendered products/inputs.html.erb within layouts/application (Duration: 5.7ms | Allocations: 3544)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.4ms | Allocations: 43652)
+
+
+Started GET "/products/10" for 45.234.149.24 at 2019-11-01 01:01:38 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  ↳ app/controllers/products_controller.rb:71:in `set_product'
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 8 LIMIT 1[0m
+  ↳ app/views/products/show.html.erb:20
+  Rendered products/show.html.erb within layouts/application (Duration: 14.8ms | Allocations: 11626)
+Completed 200 OK in 52ms (Views: 42.0ms | ActiveRecord: 1.4ms | Allocations: 53829)
+
+
+Started GET "/products" for 45.234.149.24 at 2019-11-01 01:01:59 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/index.html.erb:20
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 9 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 8 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 4 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  Rendered products/index.html.erb within layouts/application (Duration: 28.0ms | Allocations: 21201)
+Completed 200 OK in 57ms (Views: 53.7ms | ActiveRecord: 2.1ms | Allocations: 59898)
+
+
+Started GET "/products" for 45.234.149.24 at 2019-11-01 01:03:00 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/index.html.erb:20
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 9 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 8 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 4 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  Rendered products/index.html.erb within layouts/application (Duration: 32.2ms | Allocations: 20910)
+Completed 200 OK in 64ms (Views: 60.5ms | ActiveRecord: 2.1ms | Allocations: 61038)
+
+
+Started GET "/products" for 45.234.149.24 at 2019-11-01 01:05:06 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/index.html.erb:20
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 9 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 8 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 4 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  Rendered products/index.html.erb within layouts/application (Duration: 54.8ms | Allocations: 20484)
+Completed 200 OK in 86ms (Views: 82.3ms | ActiveRecord: 2.2ms | Allocations: 60599)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/jean/dg_admin/config/environment.rb:5)
+Started GET "/products" for 45.234.149.24 at 2019-11-01 01:05:35 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/index.html.erb:20
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 9 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 8 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 4 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:28
+  Rendered products/index.html.erb within layouts/application (Duration: 29.1ms | Allocations: 20037)
+Completed 200 OK in 62ms (Views: 58.9ms | ActiveRecord: 2.2ms | Allocations: 60152)
+
+
+Started GET "/admin/" for 45.234.149.24 at 2019-11-01 01:06:31 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#dashboard as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 420)
+
+
+Started GET "/users/sign_in" for 45.234.149.24 at 2019-11-01 01:06:31 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 619)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2871)
+Completed 200 OK in 50ms (Views: 36.7ms | ActiveRecord: 0.9ms | Allocations: 51804)
+
+
+Started POST "/users/sign_in" for 45.234.149.24 at 2019-11-01 01:06:39 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"sfGRhf9gh9xXfzbqJV4KOigUOC663LBklo23jTqSNFgDcvEG+2WtOtqccFAYYsrdLw3H8SN2wuE/OEH/DB4ykQ==", "user"=>{"email"=>"jeandgardany@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'jeandgardany@hotmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://www.dggirl.com.br/admin/
+Completed 302 Found in 164ms (ActiveRecord: 0.5ms | Allocations: 5801)
+
+
+Started GET "/admin/" for 45.234.149.24 at 2019-11-01 01:06:39 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `sales`[0m
+  [1m[36mSale Load (0.2ms)[0m  [1m[34mSELECT `sales`.* FROM `sales` ORDER BY `sales`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `comissions`[0m
+  [1m[36mComission Load (0.2ms)[0m  [1m[34mSELECT `comissions`.* FROM `comissions` ORDER BY `comissions`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` ORDER BY `categories`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `clients`[0m
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT `clients`.* FROM `clients` ORDER BY `clients`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `discounts`[0m
+  [1m[36mDiscount Load (0.2ms)[0m  [1m[34mSELECT `discounts`.* FROM `discounts` ORDER BY `discounts`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `products`[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (Duration: 22.9ms | Allocations: 19588)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_head.html.haml (Duration: 357.5ms | Allocations: 210926)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (Duration: 3.0ms | Allocations: 3510)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_navigation.html.haml (Duration: 7.6ms | Allocations: 9079)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (Duration: 5.5ms | Allocations: 4999)
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/pjax.html.haml (Duration: 4.0ms | Allocations: 4862)
+Completed 200 OK in 762ms (Views: 407.0ms | ActiveRecord: 12.8ms | Allocations: 384714)
+
+
+Started GET "/admin/category?_pjax=%5Bdata-pjax-container%5D" for 45.234.149.24 at 2019-11-01 01:06:46 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"category"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` ORDER BY categories.id desc LIMIT 20 OFFSET 0[0m
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (Duration: 65.7ms | Allocations: 58295)
+Completed 200 OK in 75ms (Views: 70.3ms | ActiveRecord: 0.7ms | Allocations: 63014)
+
+
+Started GET "/admin/category/4/edit?_pjax=%5Bdata-pjax-container%5D" for 45.234.149.24 at 2019-11-01 01:06:54 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"category", "id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 4 ORDER BY `categories`.`id` ASC LIMIT 1[0m
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_field.html.haml (Duration: 2.8ms | Allocations: 1832)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_field.html.haml (Duration: 0.7ms | Allocations: 155)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_submit_buttons.html.haml (Duration: 15.3ms | Allocations: 9503)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (Duration: 28.4ms | Allocations: 16054)
+Completed 200 OK in 50ms (Views: 41.9ms | ActiveRecord: 0.6ms | Allocations: 22659)
+
+
+Started PUT "/admin/category/4/edit" for 45.234.149.24 at 2019-11-01 01:06:58 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"authenticity_token"=>"Si89Jkcxwo/qTWO0O8uAB0UwgNso+zeyyAmnOW0BTBVTQORpStgWmYM7RIuC+0nmUPH20kE3RxTvtoGG4pwOcQ==", "category"=>{"code"=>"400", "name"=>"Salopetes"}, "return_to"=>"http://www.dggirl.com.br/admin/category", "_save"=>"", "model_name"=>"category", "id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 4 ORDER BY `categories`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Update (0.3ms)[0m  [1m[33mUPDATE `categories` SET `categories`.`name` = 'Salopetes', `categories`.`updated_at` = '2019-11-01 01:06:58.748502' WHERE `categories`.`id` = 4[0m
+  [1m[35m (10.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://www.dggirl.com.br/admin/category
+Completed 302 Found in 24ms (ActiveRecord: 11.5ms | Allocations: 8045)
+
+
+Started GET "/admin/category" for 45.234.149.24 at 2019-11-01 01:06:59 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"category"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` ORDER BY categories.id desc LIMIT 20 OFFSET 0[0m
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (Duration: 48.1ms | Allocations: 25006)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_head.html.haml (Duration: 205.2ms | Allocations: 176214)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (Duration: 0.6ms | Allocations: 313)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_navigation.html.haml (Duration: 0.9ms | Allocations: 451)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (Duration: 3.5ms | Allocations: 2792)
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/pjax.html.haml (Duration: 2.5ms | Allocations: 1669)
+Completed 200 OK in 266ms (Views: 261.3ms | ActiveRecord: 0.6ms | Allocations: 208699)
+
+
+Started GET "/admin/category/1/edit?_pjax=%5Bdata-pjax-container%5D" for 45.234.149.24 at 2019-11-01 01:07:07 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"category", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 ORDER BY `categories`.`id` ASC LIMIT 1[0m
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_field.html.haml (Duration: 0.2ms | Allocations: 123)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_field.html.haml (Duration: 0.2ms | Allocations: 139)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_submit_buttons.html.haml (Duration: 0.6ms | Allocations: 435)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (Duration: 3.5ms | Allocations: 2482)
+Completed 200 OK in 15ms (Views: 10.4ms | ActiveRecord: 0.6ms | Allocations: 8630)
+
+
+Started PUT "/admin/category/1/edit" for 45.234.149.24 at 2019-11-01 01:07:10 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"authenticity_token"=>"me0kcrDRon6SZSqxMTnoNWLw5VWiJRNu8L/bjBf2FKP2wY+WABNFVJl2nntCMT9V7WPdlvT5mFySu4MmgvgjGw==", "category"=>{"code"=>"100", "name"=>"Bodys"}, "return_to"=>"http://www.dggirl.com.br/admin/category", "_save"=>"", "model_name"=>"category", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 ORDER BY `categories`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Update (0.3ms)[0m  [1m[33mUPDATE `categories` SET `categories`.`name` = 'Bodys', `categories`.`updated_at` = '2019-11-01 01:07:10.686151' WHERE `categories`.`id` = 1[0m
+  [1m[35m (133.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://www.dggirl.com.br/admin/category
+Completed 302 Found in 145ms (ActiveRecord: 134.9ms | Allocations: 7842)
+
+
+Started GET "/admin/category" for 45.234.149.24 at 2019-11-01 01:07:11 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"category"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` ORDER BY categories.id desc LIMIT 20 OFFSET 0[0m
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (Duration: 38.4ms | Allocations: 24996)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_head.html.haml (Duration: 101.9ms | Allocations: 175733)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (Duration: 0.6ms | Allocations: 306)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_navigation.html.haml (Duration: 1.0ms | Allocations: 442)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (Duration: 3.4ms | Allocations: 2788)
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/pjax.html.haml (Duration: 2.6ms | Allocations: 1668)
+Completed 200 OK in 152ms (Views: 148.4ms | ActiveRecord: 0.6ms | Allocations: 208192)
+
+
+Started GET "/admin/category/3/edit?_pjax=%5Bdata-pjax-container%5D" for 45.234.149.24 at 2019-11-01 01:07:16 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"category", "id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 3 ORDER BY `categories`.`id` ASC LIMIT 1[0m
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_field.html.haml (Duration: 0.2ms | Allocations: 123)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_field.html.haml (Duration: 0.2ms | Allocations: 139)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_submit_buttons.html.haml (Duration: 0.6ms | Allocations: 435)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (Duration: 3.8ms | Allocations: 2479)
+Completed 200 OK in 14ms (Views: 8.6ms | ActiveRecord: 0.6ms | Allocations: 8618)
+
+
+Started PUT "/admin/category/3/edit" for 45.234.149.24 at 2019-11-01 01:07:21 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"authenticity_token"=>"tZMUzdK8pnL681Zv28AKCIFs7GAdl3OxxIPR32jaXIdBrwTdkv8JiH9PsOp2EHwiFp8LYl8moktkD+VoX+cD5g==", "category"=>{"code"=>"300", "name"=>"Croppeds"}, "return_to"=>"http://www.dggirl.com.br/admin/category", "_save"=>"", "model_name"=>"category", "id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 3 ORDER BY `categories`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Update (0.3ms)[0m  [1m[33mUPDATE `categories` SET `categories`.`name` = 'Croppeds', `categories`.`updated_at` = '2019-11-01 01:07:21.215310' WHERE `categories`.`id` = 3[0m
+  [1m[35m (212.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://www.dggirl.com.br/admin/category
+Completed 302 Found in 223ms (ActiveRecord: 213.7ms | Allocations: 7851)
+
+
+Started GET "/admin/category" for 45.234.149.24 at 2019-11-01 01:07:21 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"category"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` ORDER BY categories.id desc LIMIT 20 OFFSET 0[0m
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (Duration: 41.2ms | Allocations: 24995)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_head.html.haml (Duration: 142.9ms | Allocations: 175734)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (Duration: 0.7ms | Allocations: 306)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_navigation.html.haml (Duration: 1.1ms | Allocations: 442)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (Duration: 5.7ms | Allocations: 2788)
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/pjax.html.haml (Duration: 2.4ms | Allocations: 1668)
+Completed 200 OK in 198ms (Views: 194.6ms | ActiveRecord: 0.7ms | Allocations: 208188)
+
+
+Started GET "/admin/?_pjax=%5Bdata-pjax-container%5D" for 45.234.149.24 at 2019-11-01 01:07:28 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#dashboard as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `sales`[0m
+  [1m[36mSale Load (0.2ms)[0m  [1m[34mSELECT `sales`.* FROM `sales` ORDER BY `sales`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `comissions`[0m
+  [1m[36mComission Load (0.2ms)[0m  [1m[34mSELECT `comissions`.* FROM `comissions` ORDER BY `comissions`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` ORDER BY `categories`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `clients`[0m
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT `clients`.* FROM `clients` ORDER BY `clients`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `discounts`[0m
+  [1m[36mDiscount Load (0.3ms)[0m  [1m[34mSELECT `discounts`.* FROM `discounts` ORDER BY `discounts`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `products`[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/pjax
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/pjax (Duration: 11.2ms | Allocations: 7976)
+Completed 200 OK in 38ms (Views: 13.4ms | ActiveRecord: 3.3ms | Allocations: 30906)
+
+
+Started GET "/" for 45.234.149.24 at 2019-11-01 01:09:10 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/inputs.html.erb:12
+  Rendered products/inputs.html.erb within layouts/application (Duration: 5.6ms | Allocations: 3555)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.4ms | Allocations: 42274)
+
+
+Started GET "/" for 45.182.138.241 at 2019-11-01 01:15:29 +0000
+Cannot render console from 45.182.138.241! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/inputs.html.erb:12
+  Rendered products/inputs.html.erb within layouts/application (Duration: 5.1ms | Allocations: 3348)
+Completed 200 OK in 33ms (Views: 32.4ms | ActiveRecord: 0.4ms | Allocations: 41802)
+
+
+Started GET "/" for 45.234.149.24 at 2019-11-01 01:19:13 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/inputs.html.erb:12
+  Rendered products/inputs.html.erb within layouts/application (Duration: 6.3ms | Allocations: 3539)
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.4ms | Allocations: 43675)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/jean/dg_admin/config/environment.rb:5)
+Started GET "/" for 45.234.149.24 at 2019-11-01 01:20:27 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/inputs.html.erb:12
+  Rendered products/inputs.html.erb within layouts/application (Duration: 5.0ms | Allocations: 3345)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.3ms | Allocations: 41876)
+
+
+Started GET "/" for 45.234.149.24 at 2019-11-01 01:21:16 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/inputs.html.erb:12
+  Rendered products/inputs.html.erb within layouts/application (Duration: 5.6ms | Allocations: 3544)
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 0.5ms | Allocations: 43652)
+
+
+Started GET "/product/inputs" for 45.234.149.24 at 2019-11-01 01:21:24 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/inputs.html.erb:12
+  Rendered products/inputs.html.erb within layouts/application (Duration: 5.0ms | Allocations: 3345)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.3ms | Allocations: 41902)
+
+
+Started GET "/product/inputs" for 45.234.149.24 at 2019-11-01 01:22:12 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/inputs.html.erb:12
+  Rendered products/inputs.html.erb within layouts/application (Duration: 6.2ms | Allocations: 3539)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.4ms | Allocations: 43668)
+
+
