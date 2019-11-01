@@ -4,11 +4,15 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all.order(id: :desc)
+    #@products = Product.all.order(id: :desc)
+    @q = Product.ransack(params[:q].try(:merge, m: params[:combinator]))
+    @products = @q.result(distinct: true).order(id: :desc)
   end
   
   def inputs
-    @products = Product.all.order(id: :desc)
+    #@products = Product.all.order(id: :desc)
+    @q = Product.ransack(params[:q].try(:merge, m: params[:combinator]))
+    @products = @q.result(distinct: true).order(id: :desc)
   end
 
   # GET /products/1

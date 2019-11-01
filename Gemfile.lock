@@ -8,6 +8,19 @@ GIT
       less-rails (>= 3.0, < 5.0)
       railties (>= 5.0, < 7.0)
 
+GIT
+  remote: https://github.com/activerecord-hackery/ransack.git
+  revision: 3bd0078faeec17f331d424702f3e38bf4bcd7a21
+  specs:
+    polyamorous (2.3.0)
+      activerecord (>= 5.0)
+    ransack (2.3.0)
+      actionpack (>= 5.0)
+      activerecord (>= 5.0)
+      activesupport (>= 5.0)
+      i18n
+      polyamorous (= 2.3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -318,6 +331,7 @@ DEPENDENCIES
   puma (~> 3.11)
   rails (~> 6.0.0)
   rails_admin (~> 2.0)
+  ransack!
   sass-rails (~> 5)
   selenium-webdriver
   spring

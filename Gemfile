@@ -29,6 +29,8 @@ gem 'devise'
 gem 'cancancan'
 # Incluir Fotos
 gem 'carrierwave', '~> 2.0'
+# Pesquisas
+gem 'ransack', github: 'activerecord-hackery/ransack'
 # BootStrap
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem "therubyracer"
