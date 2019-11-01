@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Dggirl" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "DG Girl" %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag "application", :media => "all" %>
@@ -63,9 +63,14 @@
           <%= yield %>
         </div>
       </div><!--/row-->
-
+	   <div class'', align="center">
+		<b><p>Nos siga nas redes sociais</p></b>
+		<%= link_to image_tag("instagram-icone.png", size: "30x30", alt: "Edit Entry"), "https://www.instagram.com/dg_girl_/?hl=pt-br" %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<%= link_to image_tag("facebook-icone.png", size: "30x30", alt: "Edit Entry"), "https://www.facebook.com/Dgardany/" %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<%= link_to image_tag("whatsapp-icone.png", size: "30x30", alt: "Edit Entry"), "https://api.whatsapp.com/send?phone=5585999161438&text=Seja%20bem%20vindo%20a%20DG%20GIRl%2C%20deixe%20sua%20mensagem...." %>
+	   </div>
       <footer>
-        <p>&copy; DG GIRL 2019 ## Instagram: @dg_girl_ ## Facebook: @Dgardany ## zap: (85) 99916-1438 / (85) 99837-2000 ## Fortaleza-CE</p>
+         <b><p>&copy; DG GIRL 2019 zap: (85) 99916-1438 / (85) 99837-2000 -- Fortaleza-CE</p></b>
       </footer>
 
     </div> <!-- /container -->
