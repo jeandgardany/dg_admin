@@ -31,11 +31,11 @@
         <td><%= product.description %></td>
         <td><%= format_valor(product.price) %></td>
         <td><%= link_to image_tag(product.photo.large_thumb.url), product %></td>
-        <td><%= product.status %></td>
+        <td><%= format_status(product.status) %></td>
         <td><%= product.category.name %></td>
         <td><%= (product.created_at).strftime("%d/%m/%Y") %></td>
         <td>
-          <%= link_to t('.show', :default => t("helpers.links.show")),
+          <%= link_to "Mostrar",
                       product_path(product), :class => 'btn btn-default btn-xs' %>
         </td>
       </tr>

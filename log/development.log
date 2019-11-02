@@ -38592,3 +38592,1874 @@ Processing by ProductsController#inputs as HTML
 Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.5ms | Allocations: 41442)
 
 
+Started GET "/" for 191.53.179.22 at 2019-11-02 03:46:05 +0000
+Cannot render console from 191.53.179.22! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2809)
+Completed 200 OK in 57ms (Views: 55.2ms | ActiveRecord: 1.0ms | Allocations: 41389)
+
+
+Started GET "/" for 210.10.245.154 at 2019-11-02 05:10:38 +0000
+Cannot render console from 210.10.245.154! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2808)
+Completed 200 OK in 93ms (Views: 91.2ms | ActiveRecord: 0.5ms | Allocations: 41391)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/jean/dg_admin/config/environment.rb:5)
+Started GET "/" for 181.191.92.46 at 2019-11-02 07:04:16 +0000
+Cannot render console from 181.191.92.46! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 20.3ms | Allocations: 20587)
+Completed 200 OK in 1104ms (Views: 1077.0ms | ActiveRecord: 1.7ms | Allocations: 1618175)
+
+
+Started GET "/" for 91.237.207.11 at 2019-11-02 07:29:34 +0000
+Cannot render console from 91.237.207.11! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2829)
+Completed 200 OK in 34ms (Views: 32.1ms | ActiveRecord: 0.6ms | Allocations: 41412)
+
+
+Started GET "/" for 5.196.218.182 at 2019-11-02 09:06:34 +0000
+Cannot render console from 5.196.218.182! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 24.4ms | Allocations: 2815)
+Completed 200 OK in 52ms (Views: 50.2ms | ActiveRecord: 0.5ms | Allocations: 41396)
+
+
+Started GET "/TP/public/index.php" for 49.233.87.223 at 2019-11-02 10:10:46 +0000
+Cannot render console from 49.233.87.223! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/TP/public/index.php"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:77:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+Started GET "/TP/index.php" for 49.233.87.223 at 2019-11-02 10:10:47 +0000
+Cannot render console from 49.233.87.223! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/TP/index.php"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:77:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+Started GET "/thinkphp/html/public/index.php" for 49.233.87.223 at 2019-11-02 10:10:47 +0000
+Cannot render console from 49.233.87.223! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/thinkphp/html/public/index.php"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:77:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+Started GET "/html/public/index.php" for 49.233.87.223 at 2019-11-02 10:10:48 +0000
+Cannot render console from 49.233.87.223! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/html/public/index.php"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:77:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+Started GET "/public/index.php" for 49.233.87.223 at 2019-11-02 10:10:48 +0000
+Cannot render console from 49.233.87.223! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/public/index.php"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:77:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+Started GET "/TP/html/public/index.php" for 49.233.87.223 at 2019-11-02 10:10:48 +0000
+Cannot render console from 49.233.87.223! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/TP/html/public/index.php"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:77:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+Started GET "/elrekt.php" for 49.233.87.223 at 2019-11-02 10:10:49 +0000
+Cannot render console from 49.233.87.223! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/elrekt.php"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:77:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+Started GET "/index.php" for 49.233.87.223 at 2019-11-02 10:10:50 +0000
+Cannot render console from 49.233.87.223! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/index.php"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:77:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+Started GET "/" for 49.233.87.223 at 2019-11-02 10:10:50 +0000
+Cannot render console from 49.233.87.223! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2856)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.4ms | Allocations: 41487)
+
+
+Started HEAD "/" for 104.41.26.107 at 2019-11-02 10:55:44 +0000
+Cannot render console from 104.41.26.107! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2793)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.4ms | Allocations: 41345)
+
+
+Started GET "/" for 104.41.26.107 at 2019-11-02 10:55:45 +0000
+Cannot render console from 104.41.26.107! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2793)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.4ms | Allocations: 41353)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/jean/dg_admin/config/environment.rb:5)
+Started GET "/" for 88.244.31.157 at 2019-11-02 11:19:58 +0000
+Cannot render console from 88.244.31.157! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 21.2ms | Allocations: 20576)
+Completed 200 OK in 1095ms (Views: 1065.7ms | ActiveRecord: 1.7ms | Allocations: 1618164)
+
+
+Started GET "/" for 192.140.110.2 at 2019-11-02 11:53:05 +0000
+Cannot render console from 192.140.110.2! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2829)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.4ms | Allocations: 41415)
+
+
+Started GET "/" for 37.6.181.74 at 2019-11-02 13:32:50 +0000
+Cannot render console from 37.6.181.74! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2818)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.4ms | Allocations: 41398)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/jean/dg_admin/config/environment.rb:5)
+Started GET "/" for 45.234.149.24 at 2019-11-02 13:44:21 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#inputs as HTML
+Started GET "/" for 35.230.58.15 at 2019-11-02 13:44:21 +0000
+Cannot render console from 35.230.58.15! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 38.6ms | Allocations: 20571)
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 65.6ms | Allocations: 20630)
+Completed 200 OK in 2259ms (Views: 2190.5ms | ActiveRecord: 11.0ms | Allocations: 1618167)
+
+
+Completed 200 OK in 2153ms (Views: 2087.4ms | ActiveRecord: 9.3ms | Allocations: 1618198)
+
+
+Started GET "/" for 185.220.101.33 at 2019-11-02 13:44:25 +0000
+Cannot render console from 185.220.101.33! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/" for 185.220.101.33 at 2019-11-02 13:44:25 +0000
+Cannot render console from 185.220.101.33! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as */*
+  Rendering products/inputs.html.erb within layouts/application
+Processing by ProductsController#inputs as */*
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (8.9ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 13.4ms | Allocations: 2814)
+  [1m[36mProduct Load (16.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 20.2ms | Allocations: 2814)
+Completed 200 OK in 156ms (Views: 138.3ms | ActiveRecord: 16.4ms | Allocations: 41522)
+
+
+Completed 200 OK in 208ms (Views: 198.2ms | ActiveRecord: 8.9ms | Allocations: 41526)
+
+
+Started GET "/" for 45.234.149.24 at 2019-11-02 13:44:33 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2793)
+Completed 200 OK in 35ms (Views: 32.7ms | ActiveRecord: 0.5ms | Allocations: 41461)
+
+
+Started GET "/" for 45.234.149.24 at 2019-11-02 13:44:40 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2793)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.4ms | Allocations: 41459)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/jean/dg_admin/config/environment.rb:5)
+Started GET "/" for 69.4.87.74 at 2019-11-02 13:49:03 +0000
+Cannot render console from 69.4.87.74! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (8.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#inputs as HTML
+Started GET "/" for 69.4.87.74 at 2019-11-02 13:49:03 +0000
+Cannot render console from 69.4.87.74! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 64.6ms | Allocations: 20630)
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 93.119.227.91 at 2019-11-02 13:49:03 +0000
+Cannot render console from 93.119.227.91! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (12.6ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 88.4ms | Allocations: 20630)
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (9.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 93.119.227.91 at 2019-11-02 13:49:04 +0000
+Cannot render console from 93.119.227.91! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (1.6ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 92.1ms | Allocations: 20630)
+  [1m[35m (2.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (8.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 90.8ms | Allocations: 20630)
+Completed 200 OK in 4854ms (Views: 4790.5ms | ActiveRecord: 13.2ms | Allocations: 1618194)
+
+
+Completed 200 OK in 5084ms (Views: 4989.8ms | ActiveRecord: 27.7ms | Allocations: 1618194)
+
+
+Completed 200 OK in 4878ms (Views: 4758.1ms | ActiveRecord: 37.4ms | Allocations: 1618194)
+
+
+Completed 200 OK in 4613ms (Views: 4521.1ms | ActiveRecord: 10.9ms | Allocations: 1618195)
+
+
+Started GET "/" for 45.234.149.24 at 2019-11-02 13:50:08 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2814)
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 0.4ms | Allocations: 41377)
+
+
+Started GET "/" for 62.173.138.161 at 2019-11-02 13:57:07 +0000
+Cannot render console from 62.173.138.161! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2825)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.4ms | Allocations: 41400)
+
+
+Started GET "/HNAP1/" for 62.173.138.161 at 2019-11-02 13:57:07 +0000
+Cannot render console from 62.173.138.161! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/HNAP1"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:77:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+Started GET "/.git/config" for 45.154.255.44 at 2019-11-02 14:00:07 +0000
+Cannot render console from 45.154.255.44! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/.git/config"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:77:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+Started GET "/.git/config" for 185.220.101.29 at 2019-11-02 14:00:28 +0000
+Cannot render console from 185.220.101.29! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/.git/config"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:77:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+Started GET "/" for 179.110.222.81 at 2019-11-02 14:15:29 +0000
+Cannot render console from 179.110.222.81! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2846)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.4ms | Allocations: 41475)
+
+
+Started GET "/" for 45.234.149.24 at 2019-11-02 14:17:11 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2793)
+Completed 200 OK in 60ms (Views: 58.3ms | ActiveRecord: 0.3ms | Allocations: 41455)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/jean/dg_admin/config/environment.rb:5)
+Started GET "/TP/public/index.php" for 124.207.119.81 at 2019-11-02 14:20:07 +0000
+Cannot render console from 124.207.119.81! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/TP/public/index.php"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:77:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+Started GET "/TP/index.php" for 124.207.119.81 at 2019-11-02 14:20:09 +0000
+Cannot render console from 124.207.119.81! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/TP/index.php"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:77:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+Started GET "/thinkphp/html/public/index.php" for 124.207.119.81 at 2019-11-02 14:20:10 +0000
+Cannot render console from 124.207.119.81! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/thinkphp/html/public/index.php"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:77:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+Started GET "/html/public/index.php" for 124.207.119.81 at 2019-11-02 14:20:18 +0000
+Cannot render console from 124.207.119.81! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/html/public/index.php"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:77:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+Started GET "/" for 189.40.100.232 at 2019-11-02 14:57:03 +0000
+Cannot render console from 189.40.100.232! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2803)
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.4ms | Allocations: 41337)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/jean/dg_admin/config/environment.rb:5)
+Started GET "/" for 116.55.44.87 at 2019-11-02 15:05:23 +0000
+Cannot render console from 116.55.44.87! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 23.8ms | Allocations: 20630)
+Completed 200 OK in 1127ms (Views: 1108.9ms | ActiveRecord: 2.0ms | Allocations: 1618214)
+
+
+Started GET "/" for 177.185.192.127 at 2019-11-02 15:10:59 +0000
+Cannot render console from 177.185.192.127! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as */*
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2814)
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.4ms | Allocations: 41537)
+
+
+Started GET "/" for 109.94.120.83 at 2019-11-02 15:22:23 +0000
+Cannot render console from 109.94.120.83! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2808)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.4ms | Allocations: 41388)
+
+
+Started GET "/" for 45.234.149.24 at 2019-11-02 15:37:48 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2793)
+Completed 200 OK in 35ms (Views: 33.1ms | ActiveRecord: 0.4ms | Allocations: 41454)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/jean/dg_admin/config/environment.rb:5)
+Started GET "/" for 45.234.149.24 at 2019-11-02 15:41:01 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 10.9ms | Allocations: 2803)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.4ms | Allocations: 41445)
+
+
+Started GET "/" for 45.234.149.24 at 2019-11-02 15:44:19 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.1ms | Allocations: 2793)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.3ms | Allocations: 41434)
+
+
+Started GET "/" for 45.234.149.24 at 2019-11-02 15:44:24 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2793)
+Completed 200 OK in 60ms (Views: 58.5ms | ActiveRecord: 0.4ms | Allocations: 49870)
+
+
+Started GET "/" for 45.234.149.24 at 2019-11-02 15:44:26 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.1ms | Allocations: 2793)
+Completed 200 OK in 56ms (Views: 54.5ms | ActiveRecord: 0.3ms | Allocations: 41530)
+
+
+Started GET "/" for 45.234.149.24 at 2019-11-02 15:44:41 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2803)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.3ms | Allocations: 41446)
+
+
+Started GET "/" for 77.221.17.18 at 2019-11-02 15:53:28 +0000
+Cannot render console from 77.221.17.18! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2808)
+Completed 200 OK in 134ms (Views: 132.9ms | ActiveRecord: 0.3ms | Allocations: 65690)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/jean/dg_admin/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/jean/dg_admin/config/environment.rb:5)
+Started GET "/" for 45.234.149.24 at 2019-11-02 16:01:24 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 29.6ms | Allocations: 20630)
+Completed 500 Internal Server Error in 386ms (ActiveRecord: 2.0ms | Allocations: 506514)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.
+        on line 17:1 of app/assets/stylesheets/application.css.scss
+>> @import '~bootstrap/scss/bootstrap';
+
+   ^
+):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "DG Girl" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+  
+app/assets/stylesheets/application.css.scss:17
+app/views/layouts/application.html.erb:10
+Started GET "/" for 45.234.149.24 at 2019-11-02 16:01:34 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2860)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.6ms | Allocations: 9068)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.
+        on line 17:1 of app/assets/stylesheets/application.css.scss
+>> @import '~bootstrap/scss/bootstrap';
+
+   ^
+):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "DG Girl" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+  
+app/assets/stylesheets/application.css.scss:17
+app/views/layouts/application.html.erb:10
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/jean/dg_admin/config/environment.rb:5)
+Started GET "/" for 45.234.149.24 at 2019-11-02 16:03:04 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 22.1ms | Allocations: 20630)
+Completed 200 OK in 1714ms (Views: 1694.7ms | ActiveRecord: 1.6ms | Allocations: 1767360)
+
+
+Started GET "/" for 45.234.149.24 at 2019-11-02 16:04:48 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2814)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.4ms | Allocations: 41241)
+
+
+Started GET "/" for 45.234.149.24 at 2019-11-02 16:45:01 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 21.0ms | Allocations: 20629)
+Completed 200 OK in 812ms (Views: 793.1ms | ActiveRecord: 2.3ms | Allocations: 1170303)
+
+
+Started GET "/" for 45.234.149.24 at 2019-11-02 16:45:06 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (1.7ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2811)
+Completed 200 OK in 98ms (Views: 86.6ms | ActiveRecord: 1.7ms | Allocations: 40989)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/jean/dg_admin/config/environment.rb:5)
+Started GET "/" for 45.234.149.24 at 2019-11-02 16:45:07 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2793)
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.4ms | Allocations: 40998)
+
+
+Started GET "/" for 95.47.50.160 at 2019-11-02 17:18:53 +0000
+Cannot render console from 95.47.50.160! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 20.4ms | Allocations: 20645)
+Completed 200 OK in 826ms (Views: 806.4ms | ActiveRecord: 1.7ms | Allocations: 1171496)
+
+
+Started GET "/" for 169.197.108.38 at 2019-11-02 17:46:25 +0000
+Cannot render console from 169.197.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as */*
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2821)
+Completed 200 OK in 85ms (Views: 83.1ms | ActiveRecord: 0.3ms | Allocations: 41117)
+
+
+Started GET "/" for 198.108.66.240 at 2019-11-02 18:53:30 +0000
+Cannot render console from 198.108.66.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as */*
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2803)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.3ms | Allocations: 40942)
+
+
+Started GET "/" for 45.234.149.24 at 2019-11-02 18:55:27 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2793)
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 0.4ms | Allocations: 40934)
+
+
+Started GET "/products/3" for 45.234.149.24 at 2019-11-02 18:56:24 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/products_controller.rb:75:in `set_product'
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 9 LIMIT 1[0m
+  ↳ app/views/products/show.html.erb:20
+  Rendered products/show.html.erb within layouts/application (Duration: 24.5ms | Allocations: 6368)
+Completed 200 OK in 65ms (Views: 53.1ms | ActiveRecord: 0.9ms | Allocations: 48129)
+
+
+Started GET "/products" for 45.234.149.24 at 2019-11-02 18:56:41 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/index.html.erb:27
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 10 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 8 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 9 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 6 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  Rendered products/index.html.erb within layouts/application (Duration: 21.1ms | Allocations: 14428)
+Completed 200 OK in 51ms (Views: 47.6ms | ActiveRecord: 1.9ms | Allocations: 52723)
+
+
+Started GET "/products" for 45.234.149.24 at 2019-11-02 18:58:27 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/index.html.erb:27
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 10 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 8 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 9 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 6 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  Rendered products/index.html.erb within layouts/application (Duration: 19.0ms | Allocations: 13803)
+Completed 200 OK in 48ms (Views: 45.8ms | ActiveRecord: 1.8ms | Allocations: 51949)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/jean/dg_admin/config/environment.rb:5)
+Started GET "/products" for 45.234.149.24 at 2019-11-02 18:58:35 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/index.html.erb:27
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 10 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 8 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 9 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 6 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  Rendered products/index.html.erb within layouts/application (Duration: 19.4ms | Allocations: 14382)
+Completed 200 OK in 50ms (Views: 46.7ms | ActiveRecord: 1.8ms | Allocations: 54096)
+
+
+Started GET "/admin/" for 45.234.149.24 at 2019-11-02 18:59:27 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `sales`[0m
+  [1m[36mSale Load (0.2ms)[0m  [1m[34mSELECT `sales`.* FROM `sales` ORDER BY `sales`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `comissions`[0m
+  [1m[36mComission Load (0.2ms)[0m  [1m[34mSELECT `comissions`.* FROM `comissions` ORDER BY `comissions`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` ORDER BY `categories`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `clients`[0m
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT `clients`.* FROM `clients` ORDER BY `clients`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `discounts`[0m
+  [1m[36mDiscount Load (0.2ms)[0m  [1m[34mSELECT `discounts`.* FROM `discounts` ORDER BY `discounts`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `products`[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (Duration: 21.0ms | Allocations: 19735)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_head.html.haml (Duration: 381.0ms | Allocations: 226300)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (Duration: 3.6ms | Allocations: 3510)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_navigation.html.haml (Duration: 8.6ms | Allocations: 9079)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (Duration: 5.6ms | Allocations: 4999)
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/pjax.html.haml (Duration: 4.4ms | Allocations: 4837)
+Completed 200 OK in 760ms (Views: 430.6ms | ActiveRecord: 8.5ms | Allocations: 411947)
+
+
+Started GET "/admin/product?_pjax=%5Bdata-pjax-container%5D" for 45.234.149.24 at 2019-11-02 18:59:34 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"product"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY products.id desc LIMIT 20 OFFSET 0[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` IN (10, 8, 5, 7, 9, 6)[0m
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (Duration: 109.3ms | Allocations: 63369)
+Completed 200 OK in 124ms (Views: 112.6ms | ActiveRecord: 1.3ms | Allocations: 69123)
+
+
+Started GET "/admin/product/5/edit?_pjax=%5Bdata-pjax-container%5D" for 45.234.149.24 at 2019-11-02 19:00:03 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"product", "id"=>"5"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 5 ORDER BY `products`.`id` ASC LIMIT 1[0m
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_field.html.haml (Duration: 3.6ms | Allocations: 1791)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_field.html.haml (Duration: 0.2ms | Allocations: 155)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_text.html.haml (Duration: 1.8ms | Allocations: 1840)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_field.html.haml (Duration: 0.2ms | Allocations: 126)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_file_upload.html.haml (Duration: 7.2ms | Allocations: 5445)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_enumeration.html.haml (Duration: 3.1ms | Allocations: 2721)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` ORDER BY categories.id desc[0m
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_filtering_select.html.haml (Duration: 11.6ms | Allocations: 11725)
+  [1m[36mProductQuantity Load (0.4ms)[0m  [1m[34mSELECT `product_quantities`.* FROM `product_quantities` WHERE `product_quantities`.`product_id` = 5[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `product_quantities`[0m
+  [1m[36mProductQuantity Load (0.2ms)[0m  [1m[34mSELECT `product_quantities`.* FROM `product_quantities` ORDER BY product_quantities.id desc[0m
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (Duration: 19.6ms | Allocations: 17663)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_submit_buttons.html.haml (Duration: 9.2ms | Allocations: 9504)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (Duration: 78.9ms | Allocations: 63986)
+Completed 200 OK in 100ms (Views: 83.1ms | ActiveRecord: 2.7ms | Allocations: 70684)
+
+
+Started PUT "/admin/product/5/edit" for 45.234.149.24 at 2019-11-02 19:00:23 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"authenticity_token"=>"z6IthlD01Z91ADeNYkZVZGfDqLYH3nk66LRp2DStLESz7FT/V4DJIJk2PGQLuX32upbTfSqK3obsDnA8ZtHQ/Q==", "product"=>{"code"=>"1040", "name"=>"Cropped Organza", "description"=>"", "price"=>"13.0", "photo_cache"=>"", "remove_photo"=>"0", "status"=>"0", "category_id"=>"7", "product_quantity_ids"=>["", ""]}, "return_to"=>"https://www.dggirl.com.br/admin/product", "_save"=>"", "model_name"=>"product", "id"=>"5"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 5 ORDER BY `products`.`id` ASC LIMIT 1[0m
+  [1m[36mProductQuantity Load (0.2ms)[0m  [1m[34mSELECT `product_quantities`.* FROM `product_quantities` WHERE 1=0[0m
+  [1m[36mProductQuantity Load (0.2ms)[0m  [1m[34mSELECT `product_quantities`.* FROM `product_quantities` WHERE `product_quantities`.`product_id` = 5[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m
+  [1m[36mProduct Update (0.3ms)[0m  [1m[33mUPDATE `products` SET `products`.`price` = 13.0, `products`.`updated_at` = '2019-11-02 19:00:23.886619' WHERE `products`.`id` = 5[0m
+  [1m[35m (201.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://www.dggirl.com.br/admin/product
+Completed 302 Found in 224ms (ActiveRecord: 202.9ms | Allocations: 13881)
+
+
+Started GET "/admin/product" for 45.234.149.24 at 2019-11-02 19:00:24 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"product"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY products.id desc LIMIT 20 OFFSET 0[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` IN (10, 8, 5, 7, 9, 6)[0m
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (Duration: 46.5ms | Allocations: 28502)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_head.html.haml (Duration: 199.8ms | Allocations: 178667)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (Duration: 0.6ms | Allocations: 313)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_navigation.html.haml (Duration: 1.1ms | Allocations: 451)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (Duration: 4.6ms | Allocations: 2792)
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/pjax.html.haml (Duration: 3.4ms | Allocations: 1669)
+Completed 200 OK in 265ms (Views: 256.5ms | ActiveRecord: 0.8ms | Allocations: 214778)
+
+
+Started GET "/admin/product/2/edit?_pjax=%5Bdata-pjax-container%5D" for 45.234.149.24 at 2019-11-02 19:00:33 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"product", "id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 2 ORDER BY `products`.`id` ASC LIMIT 1[0m
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_field.html.haml (Duration: 0.4ms | Allocations: 123)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_field.html.haml (Duration: 0.2ms | Allocations: 139)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_text.html.haml (Duration: 0.3ms | Allocations: 217)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_field.html.haml (Duration: 0.7ms | Allocations: 124)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_file_upload.html.haml (Duration: 1.2ms | Allocations: 596)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_enumeration.html.haml (Duration: 0.3ms | Allocations: 220)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` ORDER BY categories.id desc[0m
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_filtering_select.html.haml (Duration: 57.2ms | Allocations: 6105)
+  [1m[36mProductQuantity Load (1.0ms)[0m  [1m[34mSELECT `product_quantities`.* FROM `product_quantities` WHERE `product_quantities`.`product_id` = 2[0m
+  [1m[36mProductQuantity Load (0.2ms)[0m  [1m[34mSELECT `product_quantities`.* FROM `product_quantities` ORDER BY product_quantities.id desc[0m
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (Duration: 6.3ms | Allocations: 5885)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_submit_buttons.html.haml (Duration: 0.6ms | Allocations: 435)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (Duration: 76.4ms | Allocations: 18207)
+Completed 200 OK in 99ms (Views: 79.2ms | ActiveRecord: 2.3ms | Allocations: 24457)
+
+
+Started PUT "/admin/product/2/edit" for 45.234.149.24 at 2019-11-02 19:01:19 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"authenticity_token"=>"wBHl38bZxwOu9IkpEhFBlxNYIWq0aNNnDho0wUSgljucactCekOyhv8IlhuuSD39eWVM07GgVzC8S/CaEC9Dlw==", "product"=>{"code"=>"1010", "name"=>"Cropped Sun Shine", "description"=>"", "price"=>"13.0", "photo_cache"=>"", "remove_photo"=>"0", "status"=>"0", "category_id"=>"7", "product_quantity_ids"=>["", ""]}, "return_to"=>"https://www.dggirl.com.br/admin/product", "_save"=>"", "model_name"=>"product", "id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 2 ORDER BY `products`.`id` ASC LIMIT 1[0m
+  [1m[36mProductQuantity Load (0.2ms)[0m  [1m[34mSELECT `product_quantities`.* FROM `product_quantities` WHERE 1=0[0m
+  [1m[36mProductQuantity Load (0.3ms)[0m  [1m[34mSELECT `product_quantities`.* FROM `product_quantities` WHERE `product_quantities`.`product_id` = 2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m
+  [1m[36mProduct Update (0.3ms)[0m  [1m[33mUPDATE `products` SET `products`.`name` = 'Cropped Sun Shine', `products`.`updated_at` = '2019-11-02 19:01:19.459127' WHERE `products`.`id` = 2[0m
+  [1m[35m (13.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://www.dggirl.com.br/admin/product
+Completed 302 Found in 36ms (ActiveRecord: 15.4ms | Allocations: 13408)
+
+
+Started GET "/admin/product" for 45.234.149.24 at 2019-11-02 19:01:19 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"product"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY products.id desc LIMIT 20 OFFSET 0[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` IN (10, 8, 5, 7, 9, 6)[0m
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (Duration: 58.0ms | Allocations: 28485)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_head.html.haml (Duration: 98.4ms | Allocations: 178216)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (Duration: 0.5ms | Allocations: 306)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_navigation.html.haml (Duration: 0.9ms | Allocations: 442)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (Duration: 3.6ms | Allocations: 2788)
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/layouts/rails_admin/pjax.html.haml (Duration: 2.6ms | Allocations: 1668)
+Completed 200 OK in 173ms (Views: 164.2ms | ActiveRecord: 1.0ms | Allocations: 214306)
+
+
+Started GET "/admin/?_pjax=%5Bdata-pjax-container%5D" for 45.234.149.24 at 2019-11-02 19:01:26 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#dashboard as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `sales`[0m
+  [1m[36mSale Load (0.2ms)[0m  [1m[34mSELECT `sales`.* FROM `sales` ORDER BY `sales`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `comissions`[0m
+  [1m[36mComission Load (0.2ms)[0m  [1m[34mSELECT `comissions`.* FROM `comissions` ORDER BY `comissions`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` ORDER BY `categories`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `clients`[0m
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT `clients`.* FROM `clients` ORDER BY `clients`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `discounts`[0m
+  [1m[36mDiscount Load (0.2ms)[0m  [1m[34mSELECT `discounts`.* FROM `discounts` ORDER BY `discounts`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `products`[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/pjax
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/pjax (Duration: 11.5ms | Allocations: 7961)
+Completed 200 OK in 41ms (Views: 14.0ms | ActiveRecord: 3.8ms | Allocations: 30918)
+
+
+Started GET "/products" for 45.234.149.24 at 2019-11-02 19:01:35 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/index.html.erb:27
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 10 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 8 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 9 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 6 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  Rendered products/index.html.erb within layouts/application (Duration: 18.6ms | Allocations: 13853)
+Completed 200 OK in 52ms (Views: 49.3ms | ActiveRecord: 1.6ms | Allocations: 52002)
+
+
+Started GET "/products" for 45.234.149.24 at 2019-11-02 19:09:30 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/index.html.erb:27
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 10 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 8 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 9 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 6 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  Rendered products/index.html.erb within layouts/application (Duration: 16.6ms | Allocations: 10637)
+Completed 200 OK in 84ms (Views: 81.3ms | ActiveRecord: 1.6ms | Allocations: 50367)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/jean/dg_admin/config/environment.rb:5)
+Started GET "/products" for 45.234.149.24 at 2019-11-02 19:09:44 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/index.html.erb:27
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 10 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 8 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 9 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 6 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  Rendered products/index.html.erb within layouts/application (Duration: 16.3ms | Allocations: 10105)
+Completed 200 OK in 44ms (Views: 41.8ms | ActiveRecord: 1.7ms | Allocations: 48239)
+
+
+Started GET "/product/inputs" for 45.234.149.24 at 2019-11-02 19:09:51 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 5.2ms | Allocations: 3087)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.4ms | Allocations: 41463)
+
+
+Started GET "/products" for 45.234.149.24 at 2019-11-02 19:09:54 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/index.html.erb:27
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 10 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 8 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 9 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 6 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  Rendered products/index.html.erb within layouts/application (Duration: 17.1ms | Allocations: 10089)
+Completed 200 OK in 45ms (Views: 42.3ms | ActiveRecord: 1.7ms | Allocations: 48254)
+
+
+Started GET "/products/8" for 45.234.149.24 at 2019-11-02 19:10:05 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  ↳ app/controllers/products_controller.rb:75:in `set_product'
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 10 LIMIT 1[0m
+  ↳ app/views/products/show.html.erb:20
+  Rendered products/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1631)
+Completed 200 OK in 48ms (Views: 45.1ms | ActiveRecord: 1.2ms | Allocations: 40420)
+
+
+Started GET "/products/8" for 45.234.149.24 at 2019-11-02 19:12:05 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  ↳ app/controllers/products_controller.rb:75:in `set_product'
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 10 LIMIT 1[0m
+  ↳ app/views/products/show.html.erb:20
+  Rendered products/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1552)
+Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.6ms | Allocations: 41770)
+
+
+Started GET "/" for 45.234.149.24 at 2019-11-02 19:12:29 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 5.2ms | Allocations: 3072)
+Completed 200 OK in 63ms (Views: 61.2ms | ActiveRecord: 0.5ms | Allocations: 41427)
+
+
+Started GET "/" for 45.234.149.24 at 2019-11-02 19:17:06 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 5.3ms | Allocations: 3087)
+Completed 200 OK in 61ms (Views: 59.0ms | ActiveRecord: 0.4ms | Allocations: 48882)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/jean/dg_admin/config/environment.rb:5)
+Started GET "/" for 45.234.149.24 at 2019-11-02 19:17:26 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2799)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.4ms | Allocations: 41079)
+
+
+Started GET "/" for 45.234.149.24 at 2019-11-02 19:17:47 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2793)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.4ms | Allocations: 41589)
+
+
+Started GET "/admin/product?_pjax=%5Bdata-pjax-container%5D" for 45.234.149.24 at 2019-11-02 19:21:11 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"product"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY products.id desc LIMIT 20 OFFSET 0[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` IN (10, 8, 5, 7, 9, 6)[0m
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (Duration: 63.9ms | Allocations: 60882)
+Completed 200 OK in 80ms (Views: 69.9ms | ActiveRecord: 1.0ms | Allocations: 69874)
+
+
+Started GET "/admin/product/new?_pjax=%5Bdata-pjax-container%5D" for 45.234.149.24 at 2019-11-02 19:21:13 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"product"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_field.html.haml (Duration: 1.5ms | Allocations: 1761)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_field.html.haml (Duration: 0.2ms | Allocations: 141)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_text.html.haml (Duration: 1.4ms | Allocations: 1830)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_field.html.haml (Duration: 0.1ms | Allocations: 121)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_file_upload.html.haml (Duration: 3.4ms | Allocations: 4730)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_enumeration.html.haml (Duration: 1.8ms | Allocations: 2612)
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` ORDER BY categories.id desc[0m
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_filtering_select.html.haml (Duration: 6.4ms | Allocations: 6669)
+  [1m[36mProductQuantity Load (0.2ms)[0m  [1m[34mSELECT `product_quantities`.* FROM `product_quantities` ORDER BY product_quantities.id desc[0m
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (Duration: 6.9ms | Allocations: 7917)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/_submit_buttons.html.haml (Duration: 6.1ms | Allocations: 9463)
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (Duration: 78.3ms | Allocations: 44177)
+Completed 200 OK in 90ms (Views: 81.8ms | ActiveRecord: 1.0ms | Allocations: 48626)
+
+
+Started GET "/admin/product?_pjax=%5Bdata-pjax-container%5D" for 45.234.149.24 at 2019-11-02 19:21:23 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"product"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ config/initializers/rails_admin.rb:8:in `block (2 levels) in <main>'
+  Rendering /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY products.id desc LIMIT 20 OFFSET 0[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` IN (10, 8, 5, 7, 9, 6)[0m
+  Rendered /home/jean/.rvm/gems/ruby-2.6.5/gems/rails_admin-2.0.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (Duration: 42.6ms | Allocations: 28495)
+Completed 200 OK in 53ms (Views: 44.7ms | ActiveRecord: 0.9ms | Allocations: 32277)
+
+
+Started GET "/" for 85.143.222.89 at 2019-11-02 19:25:01 +0000
+Cannot render console from 85.143.222.89! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as */*
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 15.9ms | Allocations: 9608)
+Completed 200 OK in 55ms (Views: 42.7ms | ActiveRecord: 2.1ms | Allocations: 51277)
+
+
+Started GET "/" for 45.234.149.24 at 2019-11-02 19:33:54 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 14.8ms | Allocations: 9613)
+Completed 200 OK in 50ms (Views: 42.4ms | ActiveRecord: 1.8ms | Allocations: 51300)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/jean/dg_admin/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/jean/dg_admin/config/environment.rb:5)
+Started GET "/" for 45.234.149.24 at 2019-11-02 19:37:00 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 26.7ms | Allocations: 20754)
+Completed 200 OK in 1434ms (Views: 1403.4ms | ActiveRecord: 1.8ms | Allocations: 1636117)
+
+
+Started GET "/products" for 45.234.149.24 at 2019-11-02 19:37:17 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/index.html.erb:27
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 10 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 8 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 9 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:35
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 6 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:35
+  Rendered products/index.html.erb within layouts/application (Duration: 51.2ms | Allocations: 18615)
+Completed 200 OK in 81ms (Views: 77.5ms | ActiveRecord: 2.0ms | Allocations: 56990)
+
+
+Started GET "/product/inputs" for 45.234.149.24 at 2019-11-02 19:37:35 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2830)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.5ms | Allocations: 41153)
+
+
+Started GET "/products/8" for 45.234.149.24 at 2019-11-02 19:37:48 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  ↳ app/controllers/products_controller.rb:75:in `set_product'
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 10 LIMIT 1[0m
+  ↳ app/views/products/show.html.erb:20
+  Rendered products/show.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1595)
+Completed 200 OK in 34ms (Views: 30.9ms | ActiveRecord: 0.6ms | Allocations: 40587)
+
+
+Started GET "/product/inputs" for 45.234.149.24 at 2019-11-02 19:38:16 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2838)
+Completed 200 OK in 34ms (Views: 31.9ms | ActiveRecord: 0.4ms | Allocations: 41142)
+
+
+Started GET "/product/inputs" for 45.234.149.24 at 2019-11-02 19:38:16 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:18
+  Rendered products/inputs.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2822)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.3ms | Allocations: 41126)
+
+
