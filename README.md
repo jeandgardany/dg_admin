@@ -39,6 +39,8 @@ rails db:create db:migrate db:seed
 Se der problema com hosts usar um desses metodos:
 The first option is to whitelist the development hostname in config/environments/development.rb.
 
+Instalar certificado SSL: https://www.monosan.com.br/vps/como-criar-um-certificado-ssl-com-lets-encrypt/
+
 Rails.application.configure do
   # Whitelist one hostname
   config.hosts << "hostname"
