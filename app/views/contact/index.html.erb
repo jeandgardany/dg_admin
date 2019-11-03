@@ -1,0 +1,34 @@
+<%- model_class = Product -%>
+<div class="page-header">
+  <h1><%= "Contatos" %></h1>
+</div>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= "WhatsApp:" %></th>
+      <th><%= "Instagram:" %></th>
+      <th><%= "Facebook:" %></th>
+      <th><%= "Site:" %></th>
+      <th><%= "Telegram:" %></th>
+      <th><%= "Email:" %></th>
+    </tr>
+  </thead>
+    
+  <tbody>
+    <tr>
+      <th><%= "(85) 99916-1438" %><br><%= "(85) 99837-2000" %></th>
+      <th><%= "@dg_girl_" %></th>
+      <th><%= "@Dgardany" %></th>
+      <th><%= "www.dggirl.com.br" %></th>
+      <th><%= "http://t.me/dg_girl" %></th>
+      <th><%= "jeandgardany@hotmail.com" %></th>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<%= link_to "Voltar", root_path, :class => 'btn btn-default btn-xs' %>
+<br>

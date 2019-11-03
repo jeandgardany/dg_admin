@@ -5,6 +5,8 @@ Rails.application.routes.draw do
    get '/product/inputs' => 'products#inputs'
   resources :categories
   root :to => 'products#inputs'
+  resources :contact, only: :index
+  resources :about, only: :index
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
