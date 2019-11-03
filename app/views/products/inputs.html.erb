@@ -1,8 +1,11 @@
-<%= search_form_for @q do |f| %>
-<%= f.search_field :name_cont, placeholder: 'Pesquisar Produtos...' %>
-<%= f.search_field :category_name_cont, placeholder: 'Pesquisar Categorias...' %>
-<%= f.submit %>
-<% end %>
+<div class="form-group", align="right">
+   <%= search_form_for @q do |f| %>
+   <%= f.search_field :name_cont, placeholder: 'Pesquisar Produtos...' %>
+   <%= f.search_field :category_name_cont, placeholder: 'Pesquisar Categorias...' %>
+   <%= f.submit %>
+   <!--button type="button" class="btn btn-primary btn-sm">Pesquisar</button-->
+   <% end %>
+</div>
 
 <!DOCTYPE html>
 <html lang="pt-br">
