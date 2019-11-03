@@ -46333,3 +46333,266 @@ Processing by ProductsController#inputs as HTML
 Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.4ms | Allocations: 44159)
 
 
+Started GET "/product/inputs" for 45.234.149.24 at 2019-11-03 20:02:30 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2793)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.4ms | Allocations: 44140)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/jean/dg_admin/config/environment.rb:5)
+Started GET "/product/inputs" for 45.234.149.24 at 2019-11-03 20:27:48 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 40.2ms | Allocations: 20695)
+Completed 200 OK in 1199ms (Views: 1155.1ms | ActiveRecord: 2.0ms | Allocations: 1640594)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/jean/dg_admin/config/environment.rb:5)
+Started GET "/product/inputs" for 45.234.149.24 at 2019-11-03 20:33:24 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 20.5ms | Allocations: 20695)
+Completed 200 OK in 1152ms (Views: 1132.5ms | ActiveRecord: 1.7ms | Allocations: 1640584)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/jean/dg_admin/config/environment.rb:5)
+Started GET "/product/inputs" for 45.234.149.24 at 2019-11-03 20:34:14 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.8ms | Allocations: 3112)
+Completed 200 OK in 38ms (Views: 35.9ms | ActiveRecord: 0.4ms | Allocations: 46049)
+
+
+Started GET "/product/inputs" for 45.234.149.24 at 2019-11-03 20:34:23 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 12.2ms | Allocations: 2799)
+Completed 200 OK in 64ms (Views: 62.5ms | ActiveRecord: 0.3ms | Allocations: 44128)
+
+
+Started GET "/products" for 45.234.149.24 at 2019-11-03 20:34:25 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/index.html.erb:30
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 10 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:38
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 8 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:38
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:38
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:38
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:38
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 9 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:38
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:38
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 6 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:38
+  Rendered products/index.html.erb within layouts/application (Duration: 65.8ms | Allocations: 18466)
+Completed 200 OK in 115ms (Views: 111.4ms | ActiveRecord: 2.1ms | Allocations: 59882)
+
+
+Started GET "/product/inputs" for 45.234.149.24 at 2019-11-03 20:34:27 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2793)
+Completed 200 OK in 103ms (Views: 100.9ms | ActiveRecord: 0.4ms | Allocations: 44154)
+
+
+Started GET "/product/inputs" for 45.234.149.24 at 2019-11-03 20:35:07 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 5.5ms | Allocations: 3105)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.4ms | Allocations: 46050)
+
+
+Started GET "/products" for 45.234.149.24 at 2019-11-03 20:35:18 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC[0m
+  ↳ app/views/products/index.html.erb:30
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 10 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:38
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 8 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:38
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:38
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:38
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 5 LIMIT 1[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:38
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 9 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:38
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:38
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 6 LIMIT 1[0m
+  ↳ app/views/products/index.html.erb:38
+  Rendered products/index.html.erb within layouts/application (Duration: 16.9ms | Allocations: 10650)
+Completed 200 OK in 47ms (Views: 43.7ms | ActiveRecord: 1.7ms | Allocations: 52050)
+
+
+Started GET "/product/inputs" for 45.234.149.24 at 2019-11-03 20:35:20 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2793)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.5ms | Allocations: 44156)
+
+
+Started GET "/about" for 45.234.149.24 at 2019-11-03 20:36:52 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 462)
+Completed 200 OK in 32ms (Views: 31.6ms | ActiveRecord: 0.0ms | Allocations: 42652)
+
+
+Started GET "/product/inputs" for 45.234.149.24 at 2019-11-03 20:36:54 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2804)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.3ms | Allocations: 44163)
+
+
+Started GET "/product/inputs" for 45.234.149.24 at 2019-11-03 21:03:58 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2793)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.4ms | Allocations: 44156)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/jean/dg_admin/config/environment.rb:5)
+Started GET "/" for 173.252.87.16 at 2019-11-03 21:16:20 +0000
+Cannot render console from 173.252.87.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#inputs as */*
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 22.3ms | Allocations: 20754)
+Completed 200 OK in 1130ms (Views: 1112.1ms | ActiveRecord: 1.7ms | Allocations: 1640550)
+
+
+Started GET "/product/inputs" for 45.234.149.24 at 2019-11-03 21:23:12 +0000
+Cannot render console from 45.234.149.24! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2814)
+Completed 200 OK in 43ms (Views: 40.9ms | ActiveRecord: 0.3ms | Allocations: 44289)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, Comission, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/jean/dg_admin/config/environment.rb:5)
+Started GET "/" for 217.73.112.122 at 2019-11-03 21:29:53 +0000
+Cannot render console from 217.73.112.122! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 32.4ms | Allocations: 20711)
+Completed 200 OK in 1127ms (Views: 1108.3ms | ActiveRecord: 1.9ms | Allocations: 1640483)
+
+
