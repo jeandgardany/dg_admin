@@ -9,7 +9,7 @@
 
 <%- model_class = Product -%>
 <div class="page-header">
-  <h1><%= "Lista de Produtos" %></h1>
+  <h2><%= "Lista de Produtos" %></h2>
 </div>
 
 <table class="table table-striped">
@@ -17,7 +17,6 @@
     <tr>
       <th><%= model_class.human_attribute_name(:code) %></th>
       <th><%= "Nome" %></th>
-      <th><%= "Descrição" %></th>
       <th><%= "Preço" %></th>
       <th><%= "Foto" %></th>
       <th><%= model_class.human_attribute_name(:status) %></th>
@@ -31,7 +30,6 @@
       <tr>
         <td><%= product.code %></td>
         <td><%= product.name %></td>
-        <td><%= product.description %></td>
         <td><%= format_valor(product.price) %></td>
         <td><%= link_to image_tag(product.photo.large_thumb.url), product %></td>
         <td><%= format_status(product.status) %></td>

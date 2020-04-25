@@ -1,6 +1,6 @@
 <%- model_class = Product -%>
 <div class="page-header">
-  <h1><%= "Produto" %></h1>
+  <h2><%= "Produto" %></h2>
 </div>
 
 <dl class="dl-horizontal">
@@ -13,7 +13,7 @@
   <dt><strong><%= "Preço" %>:</strong></dt>
   <dd><%= format_valor(@product.price) %></dd>
   <dt><strong><%= "Foto" %>:</strong></dt>
-  <dd><%= image_tag (@product.photo.thumb.url) %></dd>
+  <dd><%= image_tag (@product.photo.small_thumb.url) %></dd>
   <dt><strong><%= model_class.human_attribute_name(:status) %>:</strong></dt>
   <dd><%= format_status(@product.status) %></dd>
   <dt><strong><%= "Categoria" %>:</strong></dt>

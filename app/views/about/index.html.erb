@@ -1,11 +1,11 @@
 <%- model_class = Product -%>
 <div class="page-header" align="center">
-  <h3><%= "Sobre a Empresa:" %></h3>
+  <h2><%= "Sobre a Empresa:" %></h2>
 </div>
 <!DOCTYPE html>
 <html lang="pt-br">
 
-   <div class="", align="Center">
+   <div class="", align="center">
 	<p><h4>Atuamos no mercado de confecções desde 2010.</br>
 	Somos fabricante de roupas(moda) feminina de diversos modelos,</br>
 	sempre estamos nos atualizando e aprimorando nossos serviços,</br>
@@ -13,8 +13,8 @@
    </div>
 </br>
 </br>
-
-  <table class="table table-striped">
+<div class="table-responsive">
+ <table class="table table-condensed">
   <thead>
     <tr>
       <th><%= "Rua:" %></th>
@@ -29,17 +29,17 @@
     
   <tbody>
     <tr>
-      <th><%= "São Jose, 84" %></th>
-      <th><%= "Centro" %></th>
-      <th><%= "Box 250" %></th>
-      <th><%= "www.dggirl.com.br" %></th>
-      <th><%= "Fortaleza" %></th>
-      <th><%= "Ceará" %></th>
-      <th><%= "28.015.538/0001-99" %></th>
+      <td><%= "São Jose, 84" %></td>
+      <td><%= "Centro" %></td>
+      <td><%= "Box 250" %></td>
+      <td><%= "www.dggirl.com.br" %></td>
+      <td><%= "Fortaleza" %></td>
+      <td><%= "Ceará" %></td>
+      <td><%= "28.015.538/0001-99" %></td>
     </tr>
   </tbody>
-</table>
-
+ </table>
+</div>
 <br>
 <%= link_to "Voltar", root_path, :class => 'btn btn-default btn-xs' %>
 <br>

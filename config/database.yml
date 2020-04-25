@@ -13,7 +13,7 @@ default: &default
   adapter: mysql2
   encoding: utf8mb4
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: jean
+  username: dggirl
   password: 090271jd
   socket: /var/run/mysqld/mysqld.sock
 
@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: dggirl_production
-  username: jean
+  username: dggirl
   password: <%= ENV['DGGIRL_DATABASE_PASSWORD'] %>
