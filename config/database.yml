@@ -51,4 +51,5 @@ production:
   <<: *default
   database: dggirl_production
   username: dggirl
-  password: <%= ENV['DGGIRL_DATABASE_PASSWORD'] %>
+  password: 090271jd
+  #password: <%= ENV['DGGIRL_DATABASE_PASSWORD'] %>

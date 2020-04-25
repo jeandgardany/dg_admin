@@ -51691,3 +51691,220 @@ Processing by ProductsController#inputs as HTML
 Completed 200 OK in 99ms (Views: 87.1ms | ActiveRecord: 4.4ms | Allocations: 42682)
 
 
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, and Comission.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/dggirl/apps/dggirl/config/environment.rb:5)
+Started GET "/" for 179.69.133.204 at 2020-04-25 14:40:56 -0700
+Cannot render console from 179.69.133.204! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (3.1ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 73.8ms | Allocations: 22584)
+Completed 200 OK in 1872ms (Views: 1831.6ms | ActiveRecord: 10.0ms | Allocations: 1595466)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, and Comission.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/dggirl/apps/dggirl/config/environment.rb:5)
+Started GET "/" for 170.84.145.37 at 2020-04-25 14:45:39 -0700
+Cannot render console from 170.84.145.37! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 36.4ms | Allocations: 19451)
+Completed 200 OK in 1771ms (Views: 1741.5ms | ActiveRecord: 3.7ms | Allocations: 1592008)
+
+
+Started GET "/" for 191.45.198.245 at 2020-04-25 14:51:20 -0700
+Cannot render console from 191.45.198.245! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (2.8ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 18.8ms | Allocations: 2918)
+Completed 200 OK in 117ms (Views: 106.8ms | ActiveRecord: 2.8ms | Allocations: 41324)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, and Comission.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/dggirl/apps/dggirl/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, and Comission.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/dggirl/apps/dggirl/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, and Comission.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/dggirl/apps/dggirl/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, and Comission.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/dggirl/apps/dggirl/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord, Sale, Client, ProductQuantity, Address, Discount, and Comission.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/dggirl/apps/dggirl/config/environment.rb:5)
+Started GET "/" for 191.45.198.245 at 2020-04-25 15:37:42 -0700
+Cannot render console from 191.45.198.245! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (16.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 41.1ms | Allocations: 19451)
+Completed 200 OK in 2226ms (Views: 2183.3ms | ActiveRecord: 5.9ms | Allocations: 1592130)
+
+
+Started GET "/" for 191.45.198.245 at 2020-04-25 15:40:15 -0700
+Cannot render console from 191.45.198.245! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (2.8ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 18.4ms | Allocations: 3250)
+Completed 200 OK in 135ms (Views: 124.3ms | ActiveRecord: 2.8ms | Allocations: 43215)
+
+
+Started GET "/" for 191.45.198.245 at 2020-04-25 15:40:54 -0700
+Cannot render console from 191.45.198.245! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (45.1ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 79.0ms | Allocations: 3228)
+Completed 200 OK in 276ms (Views: 209.4ms | ActiveRecord: 45.1ms | Allocations: 43216)
+
+
+Started GET "/" for 191.45.198.245 at 2020-04-25 15:42:30 -0700
+Cannot render console from 191.45.198.245! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (3.3ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 22.1ms | Allocations: 3234)
+Completed 200 OK in 144ms (Views: 127.4ms | ActiveRecord: 3.3ms | Allocations: 43285)
+
+
+Started GET "/" for 191.45.198.245 at 2020-04-25 15:43:20 -0700
+Cannot render console from 191.45.198.245! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (4.2ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 24.2ms | Allocations: 3227)
+Completed 200 OK in 115ms (Views: 102.4ms | ActiveRecord: 4.2ms | Allocations: 43195)
+
+
+Started GET "/" for 191.45.198.245 at 2020-04-25 15:43:47 -0700
+Cannot render console from 191.45.198.245! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (2.5ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 16.8ms | Allocations: 3227)
+Completed 200 OK in 149ms (Views: 136.1ms | ActiveRecord: 2.5ms | Allocations: 43326)
+
+
+Started GET "/" for 191.45.198.245 at 2020-04-25 15:44:55 -0700
+Cannot render console from 191.45.198.245! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (3.1ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 20.7ms | Allocations: 3235)
+Completed 200 OK in 152ms (Views: 140.7ms | ActiveRecord: 3.1ms | Allocations: 43425)
+
+
+Started GET "/" for 191.45.198.245 at 2020-04-25 15:45:10 -0700
+Cannot render console from 191.45.198.245! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (2.0ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 13.2ms | Allocations: 2927)
+Completed 200 OK in 122ms (Views: 111.1ms | ActiveRecord: 2.0ms | Allocations: 41883)
+
+
+Started GET "/" for 191.45.198.245 at 2020-04-25 15:45:38 -0700
+Cannot render console from 191.45.198.245! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#inputs as HTML
+  Rendering products/inputs.html.erb within layouts/application
+  [1m[36mProduct Load (4.8ms)[0m  [1m[34mSELECT DISTINCT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 16 OFFSET 0[0m
+  ↳ app/views/products/inputs.html.erb:21
+  Rendered products/inputs.html.erb within layouts/application (Duration: 23.8ms | Allocations: 3227)
+Completed 200 OK in 135ms (Views: 119.2ms | ActiveRecord: 4.8ms | Allocations: 43195)
+
+
