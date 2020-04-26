@@ -29,6 +29,8 @@ gem 'devise'
 gem 'cancancan'
 # Incluir Fotos
 gem 'carrierwave', '~> 2.0'
+# Gerenciar Bando de Dados
+gem 'rails_db', '2.3.1'
 # Pesquisas
 gem 'ransack', github: 'activerecord-hackery/ransack'
 # BootStrap
