@@ -1,27 +1,32 @@
 <%- model_class = Product -%>
 <div class="page-header">
-  <h2><%= "Produto" %></h2>
+  <h2><%= "Produto: " %><%= @product.name %></h2>
 </div>
 
 <dl class="dl-horizontal">
   <dt><strong><%= "Código" %>:</strong></dt>
   <dd><%= @product.code %></dd>
-  <dt><strong><%= "Nome" %>:</strong></dt>
-  <dd><%= @product.name %></dd>
   <dt><strong><%= "Descrição" %>:</strong></dt>
   <dd><%= @product.description %></dd>
   <dt><strong><%= "Preço" %>:</strong></dt>
   <dd><%= format_valor(@product.price) %></dd>
-  <dt><strong><%= "Foto" %>:</strong></dt>
-  <dd><%= image_tag (@product.photo.small_thumb.url) %></dd>
   <dt><strong><%= model_class.human_attribute_name(:status) %>:</strong></dt>
   <dd><%= format_status(@product.status) %></dd>
   <dt><strong><%= "Categoria" %>:</strong></dt>
   <dd><%= @product.category.name %></dd>
+  <dt><strong><%= "Foto" %>:</strong></dt>
+  <p><dd><%= image_tag (@product.photo.small_thumb.url) %></dd></p>
+ <p><dd>
+  <% @product.files.each do |file| %>
+      <%= image_tag file.variant(resize:"300x300") %>
+      <!--%= link_to "Deletar", product_file_upload_path(@product, file), method: :delete, data: { confirm: "Tem certeza?" }, :class => 'btn btn-danger btn-sm' %-->
+  <% end %>
+ </dd></p>
+  <dd><%= link_to "Home", root_path, :class => 'btn btn-default' %>
+  <%= link_to 'Voltar', products_path, :class => 'btn btn-default' %></dd>
 </dl>
-
-<%= link_to "Home", root_path, :class => 'btn btn-default' %>
-<%= link_to "Lista de Produtos", products_path, :class => 'btn btn-default'  %>
+<br>
+<!--%= link_to 'Upload Fotos', new_product_file_upload_path(@product), :class => "btn btn-primary btn-sm" %-->
 
 <!--%= image_tag(@product.photo_url.to_s) %-->
 <!--%= image_tag(@product.photo_url(:thumb).to_s) %-->
