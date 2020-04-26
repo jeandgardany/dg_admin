@@ -3,7 +3,8 @@ class Product < ApplicationRecord
   enum status: [:active, :inactive]
   has_many :product_quantities
   mount_uploader :photo, PhotoUploader
-  has_many_attached :files
+  mount_uploaders :files, FilesUploader
+  #has_many_attached :files
   # for deletion
   attr_accessor :remove_files
   after_save do

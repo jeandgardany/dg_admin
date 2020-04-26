@@ -15,10 +15,9 @@
   <dt><strong><%= "Categoria" %>:</strong></dt>
   <dd><%= @product.category.name %></dd>
   <dt><strong><%= "Foto" %>:</strong></dt>
-  <p><dd><%= image_tag (@product.photo.small_thumb.url) %></dd></p>
- <p><dd>
+  <p><dd><%= image_tag (@product.photo.small_thumb.url) %>
   <% @product.files.each do |file| %>
-      <%= image_tag file.variant(resize:"300x300") %>
+      <%= image_tag file.small_thumb.url %>
       <!--%= link_to "Deletar", product_file_upload_path(@product, file), method: :delete, data: { confirm: "Tem certeza?" }, :class => 'btn btn-danger btn-sm' %-->
   <% end %>
  </dd></p>
@@ -32,3 +31,4 @@
 <!--%= image_tag(@product.photo_url(:thumb).to_s) %-->
 <!--%= image_tag(@product.photo_url(:small_thumb).to_s) %-->
 <!--%= image_tag(@product.photo_url(:large_thumb).to_s) %-->
+
