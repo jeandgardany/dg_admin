@@ -7,10 +7,18 @@ module ProductsHelper
         end	
    end
    def format_promotion(promotion)
-	if status == 'yes'
+	if promotion == 'yes'
 	 'Sim'
 	else
 	 'Nao'
         end		
    end
+   def format_condition(pricePRO)
+	if pricePRO?
+	 :pricePRO
+	else
+	 'Produto Nao esta em Promocao'
+        end		
+   end
+
 end

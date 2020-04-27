@@ -9,7 +9,7 @@
 
 <%- model_class = Product -%>
 <div class="page-header">
-  <h2><%= "Lista de Produtos" %></h2>
+  <h3 align="center"><%= "Lista de Produtos" %></h3>
 </div>
 
 <table class="table table-striped">
@@ -17,24 +17,22 @@
     <tr>
       <th><%= model_class.human_attribute_name(:code) %></th>
       <th><%= "Nome" %></th>
-      <th><%= "Preço" %></th>
+      <th><%= "R$ Varejo" %></th>
+      <th><%= "R$ Atacado" %></th>
       <th><%= "Foto" %></th>
-      <th><%= model_class.human_attribute_name(:status) %></th>
       <th><%= "Categoria" %></th>
-      <th><%= "Data" %></th>
       <th><%= "Ações" %></th>
     </tr>
   </thead>
   <tbody>
-    <% @products.each do |product| %>
+    <% @products.where(status: "active").each do |product| %>
       <tr>
         <td><%= product.code %></td>
         <td><%= product.name %></td>
         <td><%= format_valor(product.price) %></td>
+        <td><%= format_valor(product.priceAT) %></td>
         <td><%= link_to image_tag(product.photo.large_thumb.url), product %></td>
-        <td><%= format_status(product.status) %></td>
         <td><%= product.category.name %></td>
-        <td><%= (product.created_at).strftime("%d/%m/%Y") %></td>
         <td>
           <%= link_to "Mostrar",
                       product_path(product), :class => 'btn btn-default btn-xs' %>

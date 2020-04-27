@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_27_175649) do
+ActiveRecord::Schema.define(version: 2020_04_27_182640) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "name", null: false
@@ -114,6 +114,7 @@ ActiveRecord::Schema.define(version: 2020_04_27_175649) do
     t.json "files"
     t.integer "promotion", default: 1
     t.decimal "priceAT", precision: 10
+    t.decimal "pricePRO", precision: 10, scale: 2
     t.index ["category_id"], name: "index_products_on_category_id"
   end
 
