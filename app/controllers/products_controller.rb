@@ -15,6 +15,12 @@ class ProductsController < ApplicationController
     @products = @q.result(distinct: true).page(params[:page]).per(16).order(id: :desc)
   end
 
+  def promotions
+    #@products = Product.all.order(id: :desc)
+    @q = Product.ransack(params[:q].try(:merge, m: params[:combinator]))
+    @products = @q.result(distinct: true).page(params[:page]).per(16).order(id: :desc)
+  end
+
   # GET /products/1
   # GET /products/1.json
   def show
@@ -78,6 +84,6 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:code, :name, :description, :price, :photo, :status, :category_id, files:[])
+      params.require(:product).permit(:code, :name, :description, :price, :photo, :status, :promotion, :priceAT, :category_id, files:[])
     end
 end

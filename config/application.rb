@@ -10,6 +10,7 @@ module Dggirl
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
+    config.encoding = "utf-8"
     config.i18n.default_locale = 'pt-BR'
     config.time_zone = 'Brasilia'
     config.active_record.default_timezone = :local

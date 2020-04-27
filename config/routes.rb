@@ -6,11 +6,11 @@ Rails.application.routes.draw do
    resources :file_uploads, only: [:new, :create, :destroy]
   end
   get '/product/inputs' => 'products#inputs'
+  get '/product/promotions' => 'products#promotions'
   resources :categories
   root :to => 'products#inputs'
   resources :contact, only: :index
   resources :about, only: :index
-  #mount RailsDb::Engine => '/rails/db', :as => 'rails_db'
   
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
