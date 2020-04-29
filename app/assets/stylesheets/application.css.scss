@@ -15,20 +15,34 @@
  *= require_self
  */
 
-.navbar {
-    min-height: 38px;
-    background-color: #FFFFFF;
+// .navbar {
+//     min-height: 38px;
+//     background-color: #FFFFFF;
+// }
+
+// .navbar a.brand { font-size: 18px; }
+// .navbar a.brand:hover {
+//     color: #fff;
+//     background-color: transparent;
+//     text-decoration: none;
+// }
+
+// footer {
+//   background-color: #F5F5F5;
+//   padding: 30px 0;
+//   text-align: center;
+// }
+
+body {
+    margin : 0;
+    padding: 0;
 }
 
-.navbar a.brand { font-size: 18px; }
-.navbar a.brand:hover {
-    color: #fff;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-footer {
-  background-color: #F5F5F5;
-  padding: 30px 0;
-  text-align: center;
-}
+// body {
+//   background-color: #F5F5F5;
+//   color: #333;
+//   margin: 33px;
+//   font-family: verdana, arial, helvetica, sans-serif;
+//   font-size: 13px;
+//   line-height: 18px;
+// }
