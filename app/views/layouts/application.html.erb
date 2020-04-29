@@ -7,78 +7,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "DG Girl" %></title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag "application", :media => "all" %>
-
+    <!--<%= stylesheet_link_tag "application", :media => "all" %>-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- For third-generation iPad with high-resolution Retina display: -->
     <!-- Size should be 144 x 144 pixels -->
     <!--%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %-->
-
     <!-- For iPhone with high-resolution Retina display: -->
     <!-- Size should be 114 x 114 pixels -->
     <!--%= favicon_link_tag 'apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114' %-->
-
     <!-- For first- and second-generation iPad: -->
     <!-- Size should be 72 x 72 pixels -->
     <!--%= favicon_link_tag 'apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72' %-->
-
     <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
     <!-- Size should be 57 x 57 pixels -->
     <!--%= favicon_link_tag 'apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %-->
-
     <!-- For all other devices -->
     <!-- Size should be 32 x 32 pixels -->
     <!--%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %-->
-
     <%= javascript_include_tag "application" %>
-
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
     <![endif]-->
   </head>
   <body>
-
-    <div class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"><b><p>DG GIRL</p></b></a>
-        <div class="navbar-collapse collapse navbar-responsive-collapse">
-          <ul class="nav navbar-nav">
-            <li><%= link_to "Home", "/product/inputs" %></li>
-            <li><%= link_to "Listar Produtos", products_path %></li>
-	    <li><%= link_to "Promoções", "/product/promotions" %></li>
-            <li><%= link_to "Empresa", about_index_path %></li>
-            <li><%= link_to "Contato", contact_index_path %></li>
-	  </ul>
+     <nav class="navbar navbar-expand-lg navbar-dark">
+          <%= link_to "DG Girl", "/product/inputs", :class => 'navbar-brand' %>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+              aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><%= link_to "Todos os Produtos", products_path, :class => 'nav-link' %></li>
+                <li class="nav-item"><%= link_to "Promoções", "/product/promotions", :class => 'nav-link' %></li>
+              </ul>
+          </div>
+    </nav>
+        <div class="container page">
+              <%= bootstrap_flash %>
+              <%= yield %>
         </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <%= bootstrap_flash %>
-          <%= yield %>
+    <footer class="footer">
+        <div class="container text-center">
+            <div id="sobre"><b>Sobre</b></div>
+            <hr>
+            <p class="text-justify">
+                Atuamos no mercado de confecções desde 2010.
+                Somos fabricante de roupas(moda) feminina de diversos modelos,
+                sempre estamos nos atualizando e aprimorando nossos serviços,
+                venha nos conhecer e fazer uma parceria conosco.
+            </p>
         </div>
-      </div><!--/row-->
-	   <div class'', align="center">
-		<b><p>Nos siga nas redes sociais:</p></b>
-		<%= link_to image_tag("instagram-icone.png", size: "35x35", alt: "Edit Entry"), "https://www.instagram.com/dg_girl_/?hl=pt-br" %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<%= link_to image_tag("facebook-icone.png", size: "35x35", alt: "Edit Entry"), "https://www.facebook.com/Dgardany/" %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<%= link_to image_tag("whatsapp-icone.png", size: "35x35", alt: "Edit Entry"), "https://api.whatsapp.com/send?phone=5585999161438&text=Seja%20bem%20vindo%20a%20DG%20GIRl%2C%20deixe%20sua%20mensagem...." %>
-	   </div>
-      <footer>
-         <p> zap: (85) 99916-1438 (85) 99837-2000 -- Fortaleza-CE</p>
-	 <b><p> &copy; DG GIRL 2020</p></b>
-      </footer>
+        <div class="container text-center">
+            <div id="contato"><b>Contatos</b></div>
+            <hr>
+            <p><b>CNPJ</b>: 28.015.538/0001-99</p>
+            <p>Rua São Jose, 84 - Box 250. (Fortaleza	CE, Centro)</p>
+            <div>
+                <a class="contato_item" href="mailto:jeandgardany@hotmail.com?subject=Questions" title="E-mail"><i
+                        class="fa fa-envelope-o" aria-hidden="true"> jeandgardany@hotmail.com</i></a>
+                <a class="contato_item"> (85) 99916-1438</a>
+                <a class="contato_item"> (85) 99837-2000</a>
+            </div>
+            <a href="http://t.me/dg_girl"><i class="fa fa-telegram" aria-hidden="true" title="telegram"></i></a>
+            <a href="https://www.instagram.com/dg_girl_/?hl=pt-br"><i class="fa fa-instagram" aria-hidden="true"
+                    title="instagram"></i></a>
+            <a href="https://www.facebook.com/Dgardany/"><i class="fa fa-facebook-official" aria-hidden="true"
+                    title="facebook"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5585999161438&text=Seja%20bem%20vindo%20a%20DG%20GIRl%2C%20deixe%20sua%20mensagem...."><i class="fa fa-whatsapp" aria-hidden="true" title="Telefone/Whatsapp"></i></a>
+            <style>
+            footer {
+                background-color: #2C3E50;
+                color: white;
+                height: 100vh;
+                padding: 10rem 0;
+                font-size: 1.2rem;
+              }
+                .contato_item {
+                    display: block;
+                }
 
-    </div> <!-- /container -->
+                a {
+                    color: white;
+                }
 
+                a:link {
+                    text-decoration: none;
+                }
+
+                a:visited {
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    text-decoration: none;
+                }
+            </style>
+        </div>
+    </footer>
   </body>
 </html>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 
+<style>
+nav {
+  background-color: #2C3E50;
+}
+
+.navbar-brand:hover,:link {
+  text-decoration:none;
+  color: white;
+}
+
+.navbar-brand:hover {
+  text-decoration:none;
+  color: white;
+}
+
+.page {
+  height: 100vh;
+}
+</style>

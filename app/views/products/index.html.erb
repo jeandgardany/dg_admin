@@ -1,47 +1,44 @@
-<div class="form-group", align="left">
-   <%= search_form_for @q do |f| %>
-   <%= f.search_field :name_cont, placeholder: 'Pesquisar Produtos...' %>
-   <%= f.search_field :category_name_cont, placeholder: 'Pesquisar Categorias...' %>
-   <%= f.submit %>
-   <!--button type="button" class="btn btn-primary btn-sm">Pesquisar</button-->
-   <% end %>
-</div>
-
 <%- model_class = Product -%>
-<div class="page-header">
-  <h3 align="center"><%= "Lista de Produtos" %></h3>
-</div>
-<div class="table-responsive">
- <table class="table table-condensed">
-  <thead>
-    <tr>
-      <th><%= "Código" %></th>
+<div class="container">
+  <form class="form-inline" style="margin-top:.5rem;">
+        <p><%= search_form_for @q do |f| %>
+          <%= f.search_field :name_cont, placeholder: 'Pesquisar Produtos...',:class =>'form-control' %>
+          <%= f.search_field :category_name_cont, placeholder: 'Pesquisar Categorias...',:class =>'form-control' %>
+          <button class="btn btn-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          <% end %>
+          </p>
+  </form>
+  <h4 class="text-center">Lista de Produtos</h4>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th><%= "Código" %></th>
       <th><%= "Nome" %></th>
       <th><%= "R$ Varejo" %></th>
       <th><%= "R$ Atacado" %></th>
       <th><%= "Foto" %></th>
       <th><%= "Categoria" %></th>
       <th><%= "Ações" %></th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @products.where(status: "active").each do |product| %>
-      <tr>
-        <td><%= product.code %></td>
-        <td><%= product.name %></td>
-        <td><%= format_valor(product.price) %></td>
-        <td><%= format_valor(product.priceAT) %></td>
-        <td><%= link_to image_tag(product.photo.large_thumb.url), product %></td>
-        <td><%= product.category.name %></td>
-        <td>
-          <%= link_to "Mostrar",
-                      product_path(product), :class => 'btn btn-default btn-xs' %>
-        </td>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      <% @products.where(status: "active").each do |product| %>
+        <tr>
+          <td><%= product.code %></td>
+          <td><%= product.name %></td>
+          <td><%= format_valor(product.price) %></td>
+          <td><%= format_valor(product.priceAT) %></td>
+          <td><%= link_to image_tag(product.photo.large_thumb.url), product %></td>
+          <td><%= product.category.name %></td>
+          <td>
+            <%= link_to "Mostrar",
+                        product_path(product), :class => 'btn btn-default btn-xs' %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <br>
+  <%= link_to "Voltar", root_path, :class => 'btn btn-secondary btn-xs' %>
+  <br>
 </div>
-<br>
-<%= link_to "Voltar", root_path, :class => 'btn btn-default btn-xs' %>
-<br>

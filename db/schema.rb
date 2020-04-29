@@ -113,7 +113,7 @@ ActiveRecord::Schema.define(version: 2020_04_27_182640) do
     t.datetime "updated_at", precision: 6, null: false
     t.json "files"
     t.integer "promotion", default: 1
-    t.decimal "priceAT", precision: 10
+    t.decimal "priceAT", precision: 10, scale: 2
     t.decimal "pricePRO", precision: 10, scale: 2
     t.index ["category_id"], name: "index_products_on_category_id"
   end

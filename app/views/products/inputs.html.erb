@@ -1,26 +1,25 @@
-<div class="form-group", align="left">
-   <p><%= search_form_for @q do |f| %>
-   <%= f.search_field :name_cont, placeholder: 'Pesquisar Produtos...' %>
-   <%= f.search_field :category_name_cont, placeholder: 'Pesquisar Categorias...' %>
-   <%= f.submit %></p>
-   <% end %>
-</div>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
 <%- model_class = Product -%>
-</head>
-
- <body>      
-   <% @products.each do |product| %>
-    <div class="div.polaroid">
-      <div class="col-md-3 col-sm-3 col-xs-6">
-       <h6 align="center"><b><%= product.name %></b></h6>
-       <p><%= link_to image_tag(product.photo.small_thumb.url, class: "img-responsive img-thumbnail"), product %></p>
-      </div>
-       
-    </div>
-   <% end %>
-
-  </body>
-</html>
+<div class="container">
+  <form class="form-inline filter">
+      <p><%= search_form_for @q do |f| %>
+        <%= f.search_field :name_cont, placeholder: 'Pesquisar Produtos...',:class =>'form-control' %>
+        <%= f.search_field :category_name_cont, placeholder: 'Pesquisar Categorias...',:class =>'form-control' %>
+        <button class="btn btn-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        <% end %>
+        </p>
+  </form>
+<div class="row">
+      <% @products.each do |product| %>
+          <div class="col-md-2 col-sm-2 col-xs-4">
+            <h6 class="text-center"><b><%= product.name %></b></h6>
+            <p><%= link_to image_tag(product.photo.small_thumb.url, class: "img-responsive img-thumbnail"), product %></p>
+          </div>
+      <% end %>
+</div>
+</div>
+<style>
+.filter{
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+</style>
