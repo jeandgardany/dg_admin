@@ -6,16 +6,16 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
-Ruby 2.6.5
+Ruby 2.7.1
 
 * System dependencies:
 Seguir o Tutorial: https://gorails.com/setup/ubuntu/18.04 com opção rvm e db mysql
-Instalar imagemagick
+Instalar imagemagick:
 sudo apt-get install imagemagick
 
 * Configuration
  Trocar usuario na configuração do banco de dados
-  database.yml => user e password development e production
+  database.yml => user e password / development e production
 
  Devise:
   rails generate devise:install
@@ -53,7 +53,6 @@ The second option is to clear the entire whitelist, which lets through requests 
 Rails.application.configure do
   config.hosts.clear
 end
-
 
 * ...
 # dg_admin
