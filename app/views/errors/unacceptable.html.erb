@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>We're sorry, but something went wrong (500)</title>
+  <title>The change you wanted was rejected (422)</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
   .rails-default-error-page {
@@ -55,12 +55,13 @@
 </head>
 
 <body class="rails-default-error-page">
-  <!-- This file lives in public/500.html -->
+  <!-- This file lives in public/422.html -->
   <div class="dialog">
     <div>
-      <h1>We're sorry, but something went wrong.</h1>
+      <h1>A mudança que você queria foi rejeitada.</h1>
+      <p>Talvez você tenha tentado mudar algo ao qual não tinha acesso.</p>
     </div>
-    <p>If you are the application owner check the logs for more information.</p>
+    <p>Se você é o proprietário do aplicativo, verifique os logs para obter mais informações.</p>
   </div>
 </body>
 </html>
