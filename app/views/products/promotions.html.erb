@@ -1,25 +1,24 @@
 <%- model_class = Product -%>
 <div class="container">
- <form class="form-inline filter" style="margin-top: .5rem;">
-      <p><%= search_form_for @q do |f| %>
+   <form class="form-inline filter" style="margin-top: .5rem;">
+      <%= search_form_for @q do |f| %>
          <%= f.search_field :name_cont, placeholder: 'Pesquisar Produtos...',:class =>'form-control' %>
          <%= f.search_field :category_name_cont, placeholder: 'Pesquisar Categorias...',:class =>'form-control' %>
          <button class="btn btn-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-         <% end %>
-      </p>
-  </form>
-  <p class="text-center" style="font-size: large"><b>Produtos em Promoção (Somente Atacado)</b></p>
+      <% end %>
+   </form>
+   <p class="text-center" style="font-size: large"><b>Produtos em Promoção (Somente Atacado)</b></p>
    <div class="row">
-    <% @products.where(promotion: 0, status: "active").each do |product| %>
-      <div class="col-md-2 col-sm-2 col-xs-4">
-       <p class="text-center" style="font-size: small"><b><%= product.name %>
-        <br>
-        Desconto:<%= format_percentual((1-product.pricePRO/product.price)*100) %> %
-       <%= link_to image_tag(product.photo.small_thumb.url, class: "img-responsive img-thumbnail"), product %>
-	<br>
-       <%= format_valor(product.pricePRO) %></b></p>
-      </div>       
-    <% end %>
+      <% @products.where(promotion: 0, status: "active").each do |product| %>
+            <div class="col-md-2 col-sm-2 col-xs-4">
+            <p class="text-center" style="font-size: small"><b><%= product.name %>
+            <br>
+            Desconto:<%= format_percentual((1-product.pricePRO/product.price)*100) %> %
+            <%= link_to image_tag(product.photo.small_thumb.url, class: "img-responsive img-thumbnail"), product %>
+	         <br>
+            <%= format_valor(product.pricePRO) %></b></p>
+            </div>       
+      <% end %>
    </div>
 </div>
 <%= link_to 'home', root_path, :class => 'btn btn-secondary btn-sm' %></dd>

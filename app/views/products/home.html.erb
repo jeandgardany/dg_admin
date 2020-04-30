@@ -1,14 +1,12 @@
 <%- model_class = Product -%>
 <div>
   <form class="form-inline filter">
-     <p><%= search_form_for @q do |f| %>
+     <%= search_form_for @q do |f| %>
           <%= f.search_field :name_cont, placeholder: 'Pesquisar Produtos...',:class =>'form-control' %>
           <%= f.search_field :category_name_cont, placeholder: 'Pesquisar Categorias...',:class =>'form-control' %>
          <button class="btn btn-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-        <% end %>
-     </p>
+     <% end %>
   </form>
-
  <p class="text-center" style="font-size: large"><b>Promoções (Somente Atacado)</b></p>
  <div class="row">
    <% @products.where(promotion: 0, status: "active").each do |product| %>
@@ -31,9 +29,3 @@
       <% end %>
  </div>
 </div>
-<style>
-.filter {
-  margin-top: .5rem;
-  margin-bottom: 1rem;
-}
-</style>
