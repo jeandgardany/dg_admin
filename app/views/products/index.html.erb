@@ -8,8 +8,11 @@
           <% end %>
           </p>
   </form>
-  <h4 class="text-center">Lista de Produtos</h4>
-  <table class="table table-striped">
+
+ <h4 class="text-center">Lista de Produtos</h4>
+
+ <div class="table-responsive">
+   <table class="table table-striped">
     <thead>
       <tr>
         <th><%= "Código" %></th>
@@ -36,5 +39,6 @@
     </tbody>
   </table>
   <%= link_to "home", root_path, :class => 'btn btn-secondary btn-sm' %>
+ </div>
 </div>
 <br>

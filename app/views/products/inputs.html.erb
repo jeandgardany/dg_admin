@@ -10,7 +10,7 @@
   </form>
   <div class="row">
       <% @products.each do |product| %>
-          <div class="col-md-2 col-sm-2 col-xs-4">
+          <div class="col-md-3 col-sm-3 col-xs-6">
             <p class="text-center" style="font-size: small"><b><%= product.name %></b></p>
             <p><%= link_to image_tag(product.photo.small_thumb.url, class: "img-responsive img-thumbnail"), product %></p>
           </div>
