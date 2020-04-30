@@ -10,11 +10,12 @@ class ProductsController < ApplicationController
   end
   
   def home
+    #@instagram = Instagram.user_recent_media("167808964537649", {:count => 1})
     #@products = Product.all.order(id: :desc)
     @q = Product.ransack(params[:q].try(:merge, m: params[:combinator]))
     @products = @q.result(distinct: true).page(params[:page]).per(12).order(id: :desc)
   end
-  
+
   def inputs
     #@products = Product.all.order(id: :desc)
     @q = Product.ransack(params[:q].try(:merge, m: params[:combinator]))

@@ -19,7 +19,7 @@ module ApplicationHelper
   def format_percentual(number)
     number_to_currency number,
 	unit: "",
-  	separator: ".",
-	delimiter: ","
+  	separator: "",
+	delimiter: ""
   end
 end

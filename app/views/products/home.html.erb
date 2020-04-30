@@ -9,19 +9,23 @@
   </form>
  <p class="text-center" style="font-size: large"><b>Promoções (Somente Atacado)</b></p>
  <div class="row">
-   <% @products.where(promotion: 0, status: "active").each do |product| %>
+   <% @products.where(promotion: 0, status: "active").last(4).each do |product| %>
       <div class="col-md-3 col-sm-3 col-xs-6">
-        <p class="text-center" style="font-size: small"><b><%= product.name %></b></p>
+        <p class="text-center" style="font-size: small"><b><%= product.name %>
+	  <br><%= ((1-product.pricePRO/product.price)*100).to_i %>%<mark>off</mark></b></p>
         <p><%= link_to image_tag(product.photo.small_thumb.url, class: "img-responsive img-thumbnail"), product %></p>
-        <p class="text-center" style="font-size: small"><b>Desconto:<%= format_percentual((1-product.pricePRO/product.price)*100) %>%</b></p>
       </div>
    <% end %>
  </div>
 
+<!--% @instagram.each do |instagram| %-->
+  <!--%= image_tag instagram.images.standard_resolution.url %-->
+<!--% end %-->
 
-<p class="text-center" style="font-size: large"><b>Novos Produtos</b></p>
+
+<p class="text-center" style="font-size: large"><b>Produtos em Destaque</b></p>
  <div class="row">
-      <% @products.each do |product| %>
+      <% @products.where(hot: "true", status: "active").last(8).each do |product| %>
           <div class="col-md-3 col-sm-3 col-xs-6">
             <p class="text-center" style="font-size: small"><b><%= product.name %></b></p>
             <p><%= link_to image_tag(product.photo.small_thumb.url, class: "img-responsive img-thumbnail"), product %></p>
