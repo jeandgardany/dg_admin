@@ -9,7 +9,8 @@ Rails.application.routes.draw do
   get '/product/inputs' => 'products#inputs'
   get '/product/promotions' => 'products#promotions'
   resources :categories
-  root :to => 'products#home'
+  #root :to => 'products#home'
+  root 'products#home'
   resources :contact, only: :index
   resources :about, only: :index
 

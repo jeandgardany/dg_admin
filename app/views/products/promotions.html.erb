@@ -1,6 +1,6 @@
 <%- model_class = Product -%>
 <div class="container">
-<form class="form-inline filter" style="margin-top: .5rem;">
+ <form class="form-inline filter" style="margin-top: .5rem;">
         <p><%= search_form_for @q do |f| %>
           <%= f.search_field :name_cont, placeholder: 'Pesquisar Produtos...',:class =>'form-control' %>
           <%= f.search_field :category_name_cont, placeholder: 'Pesquisar Categorias...',:class =>'form-control' %>
@@ -8,14 +8,16 @@
           <% end %>
           </p>
   </form>
-  <h4 class="text-center">Produtos em Promoção (Somente Atacado)</h4>
-   <% @products.where(promotion: 0, status: "active").each do |product| %>
-    <div class="div.polaroid">
-      <div class="col-md-3 col-sm-3 col-xs-6">
-       <h6 align="center"><b><%= product.name %></b></h6>
+  <p class="text-center" style="font-size: large"><b>Produtos em Promoção (Somente Atacado)</b></p>
+   <div class="row">
+    <% @products.where(promotion: 0, status: "active").each do |product| %>
+     <!--div class="div.polaroid"-->
+      <div class="col-md-2 col-sm-2 col-xs-4">
+       <p class="text-center" style="font-size: small"><b><%= product.name %></b></p>
        <p><%= link_to image_tag(product.photo.small_thumb.url, class: "img-responsive img-thumbnail"), product %></p>
-       <h6 align="center"><b><%= format_valor(product.pricePRO) %></b></h6>
+       <p class="text-center" style="font-size: small"><b><%= format_valor(product.pricePRO) %></b></p>
       </div>       
-    </div>
-   <% end %>
+    <% end %>
+   </div>
 </div>
+<%= link_to 'home', root_path, :class => 'btn btn-secondary btn-sm' %></dd>

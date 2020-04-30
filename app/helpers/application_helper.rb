@@ -4,7 +4,7 @@ module ApplicationHelper
 	    unit: "R$ ",
 	    separator: ",",
 	    delimiter: "."
-	end
+       end
 	def flash_message
     messages = ""
     [:notice, :info, :warning, :error].each {|type|
@@ -14,6 +14,12 @@ module ApplicationHelper
     }
 
     messages
-  	end
-
+  end
+  
+  def format_percentual(number)
+    number_to_currency number,
+	unit: "",
+  	separator: ".",
+	delimiter: ","
+  end
 end

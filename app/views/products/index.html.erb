@@ -30,15 +30,11 @@
           <td><%= format_valor(product.priceAT) %></td>
           <td><%= link_to image_tag(product.photo.large_thumb.url), product %></td>
           <td><%= product.category.name %></td>
-          <td>
-            <%= link_to "Mostrar",
-                        product_path(product), :class => 'btn btn-default btn-xs' %>
-          </td>
+          <td><%= link_to "Mostrar", product_path(product), :class => 'btn btn-secondary btn-sm' %></td>
         </tr>
       <% end %>
     </tbody>
   </table>
-  <br>
-  <%= link_to "Voltar", root_path, :class => 'btn btn-secondary btn-xs' %>
-  <br>
+  <%= link_to "home", root_path, :class => 'btn btn-secondary btn-sm' %>
 </div>
+<br>

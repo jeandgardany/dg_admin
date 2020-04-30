@@ -8,15 +8,17 @@
         <% end %>
         </p>
   </form>
-<div class="row">
+  <div class="row">
       <% @products.each do |product| %>
           <div class="col-md-2 col-sm-2 col-xs-4">
             <p class="text-center" style="font-size: small"><b><%= product.name %></b></p>
             <p><%= link_to image_tag(product.photo.small_thumb.url, class: "img-responsive img-thumbnail"), product %></p>
           </div>
       <% end %>
+  </div>
+<%= link_to 'home', root_path, :class => 'btn btn-secondary btn-sm' %></dd>
 </div>
-</div>
+<br>
 <style>
 .filter {
   margin-top: .5rem;
