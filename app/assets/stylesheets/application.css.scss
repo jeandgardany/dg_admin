@@ -15,34 +15,48 @@
  *= require_self
  */
 
-// .navbar {
-//     min-height: 38px;
-//     background-color: #FFFFFF;
-// }
-
-// .navbar a.brand { font-size: 18px; }
-// .navbar a.brand:hover {
-//     color: #fff;
-//     background-color: transparent;
-//     text-decoration: none;
-// }
-
-// footer {
-//   background-color: #F5F5F5;
-//   padding: 30px 0;
-//   text-align: center;
-// }
-
-body {
-    margin : 0;
-    padding: 0;
-}
-
-// body {
-//   background-color: #F5F5F5;
-//   color: #333;
-//   margin: 33px;
-//   font-family: verdana, arial, helvetica, sans-serif;
-//   font-size: 13px;
-//   line-height: 18px;
-// }
+ nav {
+    background-color: #2C3E50;
+  }
+  
+  .navbar-brand:hover,:link {
+    text-decoration:none;
+    color: white;
+  }
+  
+  .navbar-brand:hover {
+    text-decoration:none;
+    color: white;
+  }
+  
+  .page {
+  
+    min-height: 100vh;
+  }
+  
+             footer {
+                  background-color: #2C3E50;
+                  color: white;
+                  height: 100vh;
+                  padding: 10rem 0;
+                  font-size: 1.8rem;
+                }
+                  .contato_item {
+                      display: block;
+                  }
+  
+                  a {
+                      color: white;
+                  }
+  
+                  a:link {
+                      text-decoration: none;
+                  }
+  
+                  a:visited {
+                      text-decoration: none;
+                  }
+  
+                  a:hover {
+                      text-decoration: none;
+                  }

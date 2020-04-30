@@ -5,13 +5,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "DG Girl" %></title>
-    <%= csrf_meta_tags %>
-    <!--<%= stylesheet_link_tag "application", :media => "all" %>-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title><%= content_for?(:title) ? yield(:title) : "DG Girl" %></title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag "application", :media => "all" %>
     <!-- For third-generation iPad with high-resolution Retina display: -->
     <!-- Size should be 144 x 144 pixels -->
     <!--%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %-->
@@ -32,9 +31,10 @@
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
     <![endif]-->
+    
   </head>
   <body>
-     <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
           <%= link_to "DG Girl", "/product/home", :class => 'navbar-brand' %>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
               aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,59 +49,30 @@
               </ul>
           </div>
     </nav>
-        <div class="container page">
-              <%= bootstrap_flash %>
-              <%= yield %>
-        </div>
-    <footer class="footer">
-        <div class="container text-center">
-            <div><b>Contatos</b></div>
-            <div>
+    <div class="container page">
+        <%= bootstrap_flash %>
+        <%= yield %>
+    </div>
+    <footer>
+        <div class="contato_box text-center">
+                <div><b>Contatos</b></div>
                 <a class="contato_item" href="mailto:jeandgardany@hotmail.com?subject=Questions" title="E-mail"><i
                         class="fa fa-envelope-o" aria-hidden="true"> jeandgardany@hotmail.com</i></a>
                 <a class="contato_item"> (85) 99916-1438</a>
                 <a class="contato_item"> (85) 99837-2000</a>
-		
-            </div>
-            <a href="http://t.me/dg_girl"><i class="fa fa-telegram" aria-hidden="true" title="telegram"></i></a>
-            <a href="https://www.instagram.com/dg_girl_/?hl=pt-br"><i class="fa fa-instagram" aria-hidden="true"
+                <a href="http://t.me/dg_girl"><i class="fa fa-telegram" aria-hidden="true" title="telegram"></i></a>
+                <a href="https://www.instagram.com/dg_girl_/?hl=pt-br"><i class="fa fa-instagram" aria-hidden="true"
                     title="instagram"></i></a>
-            <a href="https://www.facebook.com/Dgardany/"><i class="fa fa-facebook-official" aria-hidden="true"
+                <a href="https://www.facebook.com/Dgardany/"><i class="fa fa-facebook-official" aria-hidden="true"
                     title="facebook"></i></a>
-            <a href="https://api.whatsapp.com/send?phone=5585999161438&text=Seja%20bem%20vindo%20a%20DG%20GIRl%2C%20deixe%20sua%20mensagem...."><i class="fa fa-whatsapp" aria-hidden="true" title="Telefone/Whatsapp"></i></a>
-	    
-	    <a><p> &copy; DG GIRL 2020 </p></a>
-
-            <style>
-            footer {
-                background-color: #2C3E50;
-                color: white;
-                height: 100vh;
-                padding: 10rem 0;
-                font-size: 1.2rem;
-              }
-                .contato_item {
-                    display: block;
-                }
-
-                a {
-                    color: white;
-                }
-
-                a:link {
-                    text-decoration: none;
-                }
-
-                a:visited {
-                    text-decoration: none;
-                }
-
-                a:hover {
-                    text-decoration: none;
-                }
-            </style>
+                <a href="https://api.whatsapp.com/send?phone=5585999161438&text=Seja%20bem%20vindo%20a%20DG%20GIRl%2C%20deixe%20sua%20mensagem...."><i class="fa fa-whatsapp" aria-hidden="true" title="Telefone/Whatsapp"></i></a>
         </div>
+        <hr>
+	    <p class="text-center">&copy; DG GIRL <span id="footer-year"></span></p>
     </footer>
+    <script>
+        document.getElementById('footer-year').innerHTML=new Date().getFullYear();
+    </script>
   </body>
 </html>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -113,24 +84,3 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-
-<style>
-nav {
-  background-color: #2C3E50;
-}
-
-.navbar-brand:hover,:link {
-  text-decoration:none;
-  color: white;
-}
-
-.navbar-brand:hover {
-  text-decoration:none;
-  color: white;
-}
-
-.page {
-
-  min-height: 100vh;
-}
-</style>
