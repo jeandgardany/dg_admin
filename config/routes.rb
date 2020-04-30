@@ -5,10 +5,11 @@ Rails.application.routes.draw do
   resources :products do
    resources :file_uploads, only: [:new, :create, :destroy]
   end
+  get '/product/home' => 'products#home'
   get '/product/inputs' => 'products#inputs'
   get '/product/promotions' => 'products#promotions'
   resources :categories
-  root :to => 'products#inputs'
+  root :to => 'products#home'
   resources :contact, only: :index
   resources :about, only: :index
 

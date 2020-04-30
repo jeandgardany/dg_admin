@@ -9,6 +9,12 @@ class ProductsController < ApplicationController
     @products = @q.result(distinct: true).order(id: :desc)
   end
   
+  def home
+    #@products = Product.all.order(id: :desc)
+    @q = Product.ransack(params[:q].try(:merge, m: params[:combinator]))
+    @products = @q.result(distinct: true).page(params[:page]).per(12).order(id: :desc)
+  end
+  
   def inputs
     #@products = Product.all.order(id: :desc)
     @q = Product.ransack(params[:q].try(:merge, m: params[:combinator]))

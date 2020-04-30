@@ -1,0 +1,25 @@
+<%- model_class = Product -%>
+<div>
+  <form class="form-inline filter">
+     <p><%= search_form_for @q do |f| %>
+          <%= f.search_field :name_cont, placeholder: 'Pesquisar Produtos...',:class =>'form-control' %>
+          <%= f.search_field :category_name_cont, placeholder: 'Pesquisar Categorias...',:class =>'form-control' %>
+         <button class="btn btn-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        <% end %>
+     </p>
+  </form>
+ <div class="row">
+      <% @products.each do |product| %>
+          <div class="col-md-2 col-sm-2 col-xs-4">
+            <p class="text-center" style="font-size: small"><b><%= product.name %></b></p>
+            <p><%= link_to image_tag(product.photo.small_thumb.url, class: "img-responsive img-thumbnail"), product %></p>
+          </div>
+      <% end %>
+ </div>
+</div>
+<style>
+.filter {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+</style>

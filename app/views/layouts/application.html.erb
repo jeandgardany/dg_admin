@@ -35,15 +35,17 @@
   </head>
   <body>
      <nav class="navbar navbar-expand-lg navbar-dark">
-          <%= link_to "DG Girl", "/product/inputs", :class => 'navbar-brand' %>
+          <%= link_to "DG Girl", "/product/home", :class => 'navbar-brand' %>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
               aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarColor01">
               <ul class="navbar-nav mr-auto">
+		<li class="nav-item"><%= link_to "Destaques", "/product/inputs", :class => 'nav-link' %></li>
                 <li class="nav-item"><%= link_to "Todos os Produtos", products_path, :class => 'nav-link' %></li>
                 <li class="nav-item"><%= link_to "Promoções", "/product/promotions", :class => 'nav-link' %></li>
+		<li class="nav-item"><%= link_to "Sobre", about_index_path, :class => 'nav-link' %></li>
               </ul>
           </div>
     </nav>
@@ -53,19 +55,13 @@
         </div>
     <footer class="footer">
         <div class="container text-center">
-            <p><b>DG Girl</b></p>
-            <p><b>CNPJ</b>: 28.015.538/0001-99</p>
-            <p>Rua São Jose, 84 - Box 250.</p>
-            <p>Fortaleza	CE, Centro</p>
-        </div>
-        <hr>
-        <div class="container text-center">
             <div><b>Contatos</b></div>
             <div>
                 <a class="contato_item" href="mailto:jeandgardany@hotmail.com?subject=Questions" title="E-mail"><i
                         class="fa fa-envelope-o" aria-hidden="true"> jeandgardany@hotmail.com</i></a>
                 <a class="contato_item"> (85) 99916-1438</a>
                 <a class="contato_item"> (85) 99837-2000</a>
+		
             </div>
             <a href="http://t.me/dg_girl"><i class="fa fa-telegram" aria-hidden="true" title="telegram"></i></a>
             <a href="https://www.instagram.com/dg_girl_/?hl=pt-br"><i class="fa fa-instagram" aria-hidden="true"
@@ -73,6 +69,8 @@
             <a href="https://www.facebook.com/Dgardany/"><i class="fa fa-facebook-official" aria-hidden="true"
                     title="facebook"></i></a>
             <a href="https://api.whatsapp.com/send?phone=5585999161438&text=Seja%20bem%20vindo%20a%20DG%20GIRl%2C%20deixe%20sua%20mensagem...."><i class="fa fa-whatsapp" aria-hidden="true" title="Telefone/Whatsapp"></i></a>
+	    
+	    <a><p> &copy; DG GIRL 2020 </p></a>
             <style>
             footer {
                 background-color: #2C3E50;
