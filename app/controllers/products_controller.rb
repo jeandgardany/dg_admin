@@ -4,16 +4,19 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
+    #@products = User.order(:name).page params[:page]
     #@products = Product.all.order(id: :desc)
     @q = Product.ransack(params[:q].try(:merge, m: params[:combinator]))
-    @products = @q.result(distinct: true).order(id: :desc)
+    #@products = @q.result(distinct: true).order(id: :desc)
+    #@products_pag = Product.all.page(params[:page]).per(10).order(id: :desc)
+    @products = @q.result(distinct: true).page(params[:page]).per(10).order(id: :desc)
   end
   
   def home
     #@instagram = Instagram.user_recent_media("167808964537649", {:count => 1})
     #@products = Product.all.order(id: :desc)
     @q = Product.ransack(params[:q].try(:merge, m: params[:combinator]))
-    @products = @q.result(distinct: true).page(params[:page]).per(12).order(id: :desc)
+    @products = @q.result(distinct: true).page(params[:page]).per(16).order(id: :desc)
   end
 
   def inputs
