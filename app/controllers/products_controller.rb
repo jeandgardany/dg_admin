@@ -17,12 +17,14 @@ class ProductsController < ApplicationController
     #@products = Product.all.order(id: :desc)
     @q = Product.ransack(params[:q].try(:merge, m: params[:combinator]))
     @products = @q.result(distinct: true).page(params[:page]).per(16).order(id: :desc)
+    @products_hot = @q.result(distinct: true).page(params[:page]).per(16).order(updated_at: :desc)
   end
 
   def inputs
     #@products = Product.all.order(id: :desc)
     @q = Product.ransack(params[:q].try(:merge, m: params[:combinator]))
     @products = @q.result(distinct: true).page(params[:page]).per(16).order(id: :desc)
+    @products_hot = @q.result(distinct: true).page(params[:page]).per(16).order(updated_at: :desc)
   end
 
   def promotions

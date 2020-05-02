@@ -25,7 +25,7 @@
 
 <p class="text-center" style="font-size: large"><b>Produtos em Destaque</b></p>
  <div class="row">
-      <% @products.where(hot: "true", status: "active").last(8).each do |product| %>
+      <% @products_hot.where(hot: "true", status: "active").last(8).each do |product| %>
           <div class="col-md-3 col-sm-3 col-xs-6">
             <p class="text-center" style="font-size: small"><b><%= product.name %></b></p>
             <p><%= link_to image_tag(product.photo.small_thumb.url, class: "img-responsive img-thumbnail"), product %></p>
