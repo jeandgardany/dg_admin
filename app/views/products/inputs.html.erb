@@ -7,11 +7,13 @@
         <button class="btn btn-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
         <% end %>
   </form>
+  <p class="text-center" style="font-size: large"><b>Desconto para Atacadistas:</b></p>
   <div class="row">
       <% @products_hot.where(hot: "true", status: "active").each do |product| %>
-          <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="col-md-2 col-sm-2 col-xs-4">
             <p class="text-center" style="font-size: small"><b><%= product.name %></b></p>
             <p><%= link_to image_tag(product.photo.small_thumb.url, class: "img-responsive img-thumbnail"), product %></p>
+            <p class="text-center"><b><%= format_valor(product.price) %></b></p>
           </div>
       <% end %>
   </div>
