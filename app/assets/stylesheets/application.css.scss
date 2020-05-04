@@ -15,10 +15,13 @@
  *= require_self
  */
  
-nav {
-   background-color: #2C3E50;
-}
-  
+
+.navbar {
+    background-color: #2C3E50;
+    position: fixed !important;
+    width: 100%;
+    z-index: 9999;
+   }
 .navbar-brand:hover,:link {
     text-decoration:none;
     color: white;
@@ -30,8 +33,11 @@ nav {
 }
 
 .page {
-  
     min-height: 100vh;
+}
+
+.page::before {
+    margin-bottom: 8rem;  
 }
 
 .filter {
