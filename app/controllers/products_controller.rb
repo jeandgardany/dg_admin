@@ -12,6 +12,10 @@ class ProductsController < ApplicationController
     @products = @q.result(distinct: true).page(params[:page]).per(10).order(id: :desc)
   end
   
+  def user_recent_media
+    @instagram = Instagram.user_recent_media("167808964537649", {:count => 1})
+  end
+
   def home
     #@instagram = Instagram.user_recent_media("167808964537649", {:count => 1})
     #@products = Product.all.order(id: :desc)
