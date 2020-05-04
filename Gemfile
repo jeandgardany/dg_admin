@@ -27,6 +27,8 @@ gem 'rails_admin', '~> 2.0'
 gem 'devise'
 # Autorizacao
 gem 'cancancan'
+# Paginação
+gem 'kaminari'
 # Incluir Fotos
 gem 'carrierwave', '~> 2.0'
 # Gerenciar Bando de Dados

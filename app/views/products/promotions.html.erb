@@ -12,11 +12,9 @@
       <% @products.where(promotion: 0, status: "active").each do |product| %>
             <div class="col-md-2 col-sm-2 col-xs-4">
             <p class="text-center" style="font-size: small"><b><%= product.name %>
-            <br>
-            Desconto:<%= format_percentual((1-product.pricePRO/product.price)*100) %> %
-            <%= link_to image_tag(product.photo.small_thumb.url, class: "img-responsive img-thumbnail"), product %>
-	         <br>
-            <%= format_valor(product.pricePRO) %></b></p>
+            <br><%= ((1-product.pricePRO/product.price)*100).to_i %>%<mark>off</mark></b></p>
+            <p><%= link_to image_tag(product.photo.small_thumb.url, class: "img-responsive img-thumbnail"), product %></p>
+            <p class="text-center"><b><%= format_valor(product.pricePRO) %></b></p>
             </div>       
       <% end %>
    </div>

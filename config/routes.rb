@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/product/home' => 'products#home'
   get '/product/inputs' => 'products#inputs'
   get '/product/promotions' => 'products#promotions'
+  get '/product/user_recent_media' => 'products#user_recent_media'
   resources :categories
   #root :to => 'products#home'
   root 'products#home'

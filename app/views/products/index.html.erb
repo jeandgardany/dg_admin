@@ -12,13 +12,13 @@
    <table class="table table-striped">
       <thead>
         <tr>
-          <th><%= "Código" %></th>
-        <th><%= "Nome" %></th>
-        <th><%= "R$ Varejo" %></th>
-        <th><%= "R$ Atacado" %></th>
-        <th><%= "Foto" %></th>
-        <th><%= "Categoria" %></th>
-        <th><%= "Ações" %></th>
+          <th><%= "Cód:" %></th>
+        <th><%= "Nome:" %></th>
+        <th><%= "R$ Varejo:" %></th>
+        <th><%= "R$ Atacado:" %></th>
+        <th><%= "Foto:" %></th>
+        <th><%= "Categoria:" %></th>
+        <th><%= "Ações:" %></th>
         </tr>
       </thead>
       <tbody>
@@ -35,6 +35,9 @@
         <% end %>
       </tbody>
    </table>
+	<%= paginate @products %>
+    <br>
    <%= link_to "home", root_path, :class => 'btn btn-secondary btn-sm' %>
  </div>
+<br>
 </div>
