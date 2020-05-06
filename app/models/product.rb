@@ -1,6 +1,7 @@
 class Product < ApplicationRecord
   belongs_to :category
   enum status: [:active, :inactive]
+  enum promotion: [:yes, :no]
   has_many :product_quantities
   mount_uploader :photo, PhotoUploader
   mount_uploaders :files, FilesUploader

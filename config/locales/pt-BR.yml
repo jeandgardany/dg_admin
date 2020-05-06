@@ -221,3 +221,22 @@ pt-BR:
       long: "%d de %B de %Y, %H:%M"
       short: "%d de %B, %H:%M"
     pm: ''
+---
+
+   views:
+    pagination:
+      first: 'Primeiro'
+      last: 'Último'
+      previous: 'Anterior'
+      next: 'Próximo'
+      truncate: 'fechar'
+   helpers:
+    page_entries_info:
+      one_page:
+        display_entries:
+          zero: "Não %{entry_name} existe"
+          one: "Exibindo <b>1</b> %{entry_name}"
+          other: "Exibindo <b>todos %{count}</b> %{entry_name}"
+      more_pages:
+        display_entries: "Exibindo %{entry_name} <b>%{first}&nbsp;-&nbsp;%{last}</b> de <b>%{total}</b> no total"
+  

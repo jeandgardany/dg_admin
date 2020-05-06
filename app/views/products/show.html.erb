@@ -8,10 +8,17 @@
   <dd><%= @product.code %></dd>
   <dt><strong><%= "Descrição" %>:</strong></dt>
   <dd><%= @product.description %></dd>
-  <dt><strong><%= "Preço" %>:</strong></dt>
+  <dt><strong><%= "Preço Varejo" %>:</strong></dt>
   <dd><%= format_valor(@product.price) %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:status) %>:</strong></dt>
-  <dd><%= format_status(@product.status) %></dd>
+  <dt><strong><%= "Preço Atacado" %>:</strong></dt>
+  <dd><%= format_valor(@product.priceAT) %></dd>
+  <% if @product.pricePRO? %>
+  <dt><strong><%= "Preço Promoção" %>:</strong></dt>
+  <% else %>
+  <% end %>
+
+  <% if @product.pricePRO? %>
+  <dd><%= format_valor(@product.pricePRO) %> **Somente Atacado**</dd>
   <dt><strong><%= "Categoria" %>:</strong></dt>
   <dd><%= @product.category.name %></dd>
   <dt><strong><%= "Foto" %>:</strong></dt>
@@ -21,10 +28,26 @@
       <!--%= link_to "Deletar", product_file_upload_path(@product, file), method: :delete, data: { confirm: "Tem certeza?" }, :class => 'btn btn-danger btn-sm' %-->
   <% end %>
  </dd></p>
-  <dd><%= link_to "Home", root_path, :class => 'btn btn-default' %>
-  <%= link_to 'Voltar', products_path, :class => 'btn btn-default' %></dd>
+  <dd><%= link_to "Home", root_path, :class => 'btn btn-secondary btn-sm' %>
+  <%= link_to 'Voltar', products_path, :class => 'btn btn-secondary btn-sm' %></dd>
 </dl>
 <br>
+
+  <% else %>
+  <dt><strong><%= "Categoria" %>:</strong></dt>
+  <dd><%= @product.category.name %></dd>
+  <dt><strong><%= "Foto" %>:</strong></dt>
+  <p><dd><%= image_tag (@product.photo.small_thumb.url) %>
+  <% @product.files.each do |file| %>
+      <%= image_tag file.small_thumb.url %>
+      <!--%= link_to "Deletar", product_file_upload_path(@product, file), method: :delete, data: { confirm: "Tem certeza?" }, :class => 'btn btn-danger btn-sm' %-->
+  <% end %>
+ </dd></p>
+  <dd><%= link_to "Home", root_path, :class => 'btn btn-secondary btn-sm' %>
+  <%= link_to 'Voltar', products_path, :class => 'btn btn-secondary btn-sm' %></dd>
+</dl>
+<br>
+  <% end %>
 <!--%= link_to 'Upload Fotos', new_product_file_upload_path(@product), :class => "btn btn-primary btn-sm" %-->
 
 <!--%= image_tag(@product.photo_url.to_s) %-->

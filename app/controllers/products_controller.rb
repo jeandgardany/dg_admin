@@ -4,12 +4,34 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
+    #@products = User.order(:name).page params[:page]
     #@products = Product.all.order(id: :desc)
     @q = Product.ransack(params[:q].try(:merge, m: params[:combinator]))
-    @products = @q.result(distinct: true).order(id: :desc)
+    #@products = @q.result(distinct: true).order(id: :desc)
+    #@products_pag = Product.all.page(params[:page]).per(10).order(id: :desc)
+    @products = @q.result(distinct: true).page(params[:page]).per(10).order(id: :desc)
   end
   
+  def user_recent_media
+    @instagram = Instagram.user_recent_media("167808964537649", {:count => 1})
+  end
+
+  def home
+    #@instagram = Instagram.user_recent_media("167808964537649", {:count => 1})
+    #@products = Product.all.order(id: :desc)
+    @q = Product.ransack(params[:q].try(:merge, m: params[:combinator]))
+    @products = @q.result(distinct: true).page(params[:page]).per(16).order(id: :desc)
+    @products_hot = @q.result(distinct: true).page(params[:page]).per(16).order(updated_at: :desc)
+  end
+
   def inputs
+    #@products = Product.all.order(id: :desc)
+    @q = Product.ransack(params[:q].try(:merge, m: params[:combinator]))
+    @products = @q.result(distinct: true).page(params[:page]).per(16).order(id: :desc)
+    @products_hot = @q.result(distinct: true).page(params[:page]).per(16).order(updated_at: :desc)
+  end
+
+  def promotions
     #@products = Product.all.order(id: :desc)
     @q = Product.ransack(params[:q].try(:merge, m: params[:combinator]))
     @products = @q.result(distinct: true).page(params[:page]).per(16).order(id: :desc)
@@ -78,6 +100,6 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:code, :name, :description, :price, :photo, :status, :category_id, files:[])
+      params.require(:product).permit(:code, :name, :description, :price, :photo, :status, :promotion, :priceAT, :pricePRO, :category_id, files:[])
     end
 end

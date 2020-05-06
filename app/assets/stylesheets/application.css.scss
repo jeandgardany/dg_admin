@@ -14,21 +14,63 @@
  *= require_tree .
  *= require_self
  */
+ 
 
 .navbar {
-    min-height: 38px;
-    background-color: #FFFFFF;
+    background-color: #2C3E50;
+    position: fixed !important;
+    width: 100%;
+    z-index: 9999;
+   }
+.navbar-brand:hover,:link {
+    text-decoration:none;
+    color: white;
 }
 
-.navbar a.brand { font-size: 18px; }
-.navbar a.brand:hover {
-    color: #fff;
-    background-color: transparent;
+.navbar-brand:hover {
+    text-decoration:none;
+    color: white;
+}
+
+.page {
+    min-height: 100vh;
+}
+
+.page::before {
+    margin-bottom: 8rem;  
+}
+
+.filter {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+  
+footer {
+    .copy_message {
+        font-size: small;
+    }
+      background-color: #2C3E50;
+      color: white;
+      padding: 2rem 0;
+      font-size: 1.8rem;
+}
+
+.contato_item {
+    display: block;
+}
+
+a {
+    color: white;
+}
+
+a:link {
     text-decoration: none;
 }
 
-footer {
-  background-color: #F5F5F5;
-  padding: 30px 0;
-  text-align: center;
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
 }

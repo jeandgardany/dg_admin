@@ -1,49 +1,43 @@
-<div class="form-group", align="left">
-   <%= search_form_for @q do |f| %>
-   <%= f.search_field :name_cont, placeholder: 'Pesquisar Produtos...' %>
-   <%= f.search_field :category_name_cont, placeholder: 'Pesquisar Categorias...' %>
-   <%= f.submit %>
-   <!--button type="button" class="btn btn-primary btn-sm">Pesquisar</button-->
-   <% end %>
-</div>
-
 <%- model_class = Product -%>
-<div class="page-header">
-  <h2><%= "Lista de Produtos" %></h2>
+<div class="container">
+  <form class="form-inline" style="margin-top:.5rem;">
+        <%= search_form_for @q do |f| %>
+          <%= f.search_field :name_cont, placeholder: 'Pesquisar Produtos...',:class =>'form-control' %>
+          <%= f.search_field :category_name_cont, placeholder: 'Pesquisar Categorias...',:class =>'form-control' %>
+          <button class="btn btn-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        <% end %>
+  </form>
+  <h4 class="text-center">Lista de Produtos</h4>
+  <div class="table-responsive">
+   <table class="table table-striped">
+      <thead>
+        <tr>
+          <th><%= "Cód:" %></th>
+        <th><%= "Nome:" %></th>
+        <th><%= "R$ Varejo:" %></th>
+        <th><%= "R$ Atacado:" %></th>
+        <th><%= "Foto:" %></th>
+        <th><%= "Categoria:" %></th>
+        <th><%= "Ações:" %></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @products.where(status: "active").each do |product| %>
+          <tr>
+            <td><%= product.code %></td>
+            <td><%= product.name %></td>
+            <td><%= format_valor(product.price) %></td>
+            <td><%= format_valor(product.priceAT) %></td>
+            <td><%= link_to image_tag(product.photo.large_thumb.url), product %></td>
+            <td><%= product.category.name %></td>
+            <td><%= link_to "Mostrar", product_path(product), :class => 'btn btn-secondary btn-sm' %></td>
+          </tr>
+        <% end %>
+      </tbody>
+   </table>
+	<%= paginate @products %>
+    <br>
+   <%= link_to "home", root_path, :class => 'btn btn-secondary btn-sm' %>
+ </div>
+<br>
 </div>
-
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th><%= model_class.human_attribute_name(:code) %></th>
-      <th><%= "Nome" %></th>
-      <th><%= "Preço" %></th>
-      <th><%= "Foto" %></th>
-      <th><%= model_class.human_attribute_name(:status) %></th>
-      <th><%= "Categoria" %></th>
-      <th><%= "Data" %></th>
-      <th><%= "Ações" %></th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @products.each do |product| %>
-      <tr>
-        <td><%= product.code %></td>
-        <td><%= product.name %></td>
-        <td><%= format_valor(product.price) %></td>
-        <td><%= link_to image_tag(product.photo.large_thumb.url), product %></td>
-        <td><%= format_status(product.status) %></td>
-        <td><%= product.category.name %></td>
-        <td><%= (product.created_at).strftime("%d/%m/%Y") %></td>
-        <td>
-          <%= link_to "Mostrar",
-                      product_path(product), :class => 'btn btn-default btn-xs' %>
-        </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-<%= link_to "Voltar", root_path, :class => 'btn btn-default btn-xs' %>
-<br>

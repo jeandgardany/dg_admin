@@ -5,12 +5,20 @@ Rails.application.routes.draw do
   resources :products do
    resources :file_uploads, only: [:new, :create, :destroy]
   end
+  get '/product/home' => 'products#home'
   get '/product/inputs' => 'products#inputs'
+  get '/product/promotions' => 'products#promotions'
+  get '/product/user_recent_media' => 'products#user_recent_media'
   resources :categories
-  root :to => 'products#inputs'
+  #root :to => 'products#home'
+  root 'products#home'
   resources :contact, only: :index
   resources :about, only: :index
-  #mount RailsDb::Engine => '/rails/db', :as => 'rails_db'
+
+   #get '404', :to => 'application#page_not_found'
+   match '/404', to: 'errors#not_found', :via => :all
+   match '/422', to: 'errors#unacceptable', :via => :all
+   match '/500', to: 'errors#internal_error', :via => :all
   
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
