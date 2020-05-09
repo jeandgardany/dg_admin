@@ -22,6 +22,15 @@
     width: 100%;
     z-index: 9999;
    }
+// reset the default navbar brand padding [it's 15px by default]
+.navbar-brand {
+    padding: 0;
+}
+// transfer the navbar brand padding to the image inside it, also make it 100% height
+//.navbar-brand  >img {
+ //   padding: 15px;  // this value is optional, increasing or decreasing it is up to you.
+ //   height: 100%;
+//}         
 .navbar-brand:hover,:link {
     text-decoration:none;
     color: white;
@@ -42,7 +51,7 @@
 
 .filter {
   margin-top: .5rem;
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
   
 footer {
