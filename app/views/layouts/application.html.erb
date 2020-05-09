@@ -42,16 +42,16 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <a class="navbar-brand" href="/"><img src="/images/logo1.png" height="50" alt="50"></a>
-                <%#= link_to image_tag('/images/logo3.jpeg', style: 'height:auto;width:8%;margin-top:-1px;'), root_path, :class => 'navbar-header' --%>
             </div>
-          <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav mr-auto">
-		      <li class="nav-item"><%= link_to "Destaques", "/product/inputs", :class => 'nav-link' %></li>
-              <li class="nav-item"><%= link_to "Promoções", "/product/promotions", :class => 'nav-link' %></li>
-		      <li class="nav-item"><%= link_to "Todos os Produtos", products_path, :class => 'nav-link' %></li>
-		      <li class="nav-item"><%= link_to "Sobre", about_index_path, :class => 'nav-link' %></li>
-             </ul>
-          </div>
+                <%#= link_to image_tag('/images/logo3.jpeg', style: 'height:auto;width:8%;margin-top:-1px;'), root_path, :class => 'navbar-header' --%>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav mr-auto">
+		              <li class="nav-item"><%= link_to "Destaques", "/product/inputs", :class => 'nav-link' %></li>
+                      <li class="nav-item"><%= link_to "Promoções", "/product/promotions", :class => 'nav-link' %></li>
+		              <li class="nav-item"><%= link_to "Todos os Produtos", products_path, :class => 'nav-link' %></li>
+		              <li class="nav-item"><%= link_to "Sobre", about_index_path, :class => 'nav-link' %></li>
+                    </ul>
+                </div>
         </div>
     </nav>
     <div class="container page">
@@ -72,13 +72,11 @@
                     title="Facebook"></i></a>
                 <a href="https://api.whatsapp.com/send?phone=5585999161438&text=Seja%20bem%20vindo%20a%20DG%20GIRL%2C%20deixe%20sua%20mensagem...."><i class="fa fa-whatsapp" aria-hidden="true" title="Whatsapp"></i></a>
         </div>
-        <hr>
 	    <p class="text-center copy_message">&copy; <font size="2px">DGGIRL 2020</font></p>
     </footer>
     <script>
         document.getElementById('footer-year').innerHTML=new Date().getFullYear();
     </script>
-
   </body>
 </html>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
