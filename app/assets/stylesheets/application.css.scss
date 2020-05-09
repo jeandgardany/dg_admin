@@ -17,11 +17,23 @@
  
 
 .navbar {
-    background-color: #2C3E50;
+    background-color: #2F3F3F;
+    color: white;
     position: fixed !important;
     width: 100%;
     z-index: 9999;
    }
+/* navbar */
+.navbar-default {
+    background-color: #2F3F3F;
+    border-color: #E7E7E7;
+    width: 100%;
+    z-index: 9999;
+}
+/* Title */
+.navbar-default .navbar-brand {
+    color: #777;
+}
 // reset the default navbar brand padding [it's 15px by default]
 .navbar-brand {
     padding: 0;
@@ -58,7 +70,7 @@ footer {
     .copy_message {
         font-size: small;
     }
-      background-color: #2C3E50;
+      background-color: #2F3F3F;
       color: white;
       padding: 2rem 0;
       font-size: 1.8rem;
