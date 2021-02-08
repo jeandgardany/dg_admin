@@ -27,10 +27,10 @@ gem 'rails_admin', '~> 2.0'
 gem 'devise'
 # Autorizacao
 gem 'cancancan'
-# Paginação
+# PaginaÃ§Ã£o
 gem 'kaminari'
 # Incluir Fotos
-gem 'carrierwave', '~> 2.0'
+gem 'carrierwave', '~> 2.1'
 # Gerenciar Bando de Dados
 gem 'rails_db', '2.3.1'
 # Pesquisas
