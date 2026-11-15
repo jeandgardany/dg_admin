@@ -13,5 +13,8 @@
   "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "^3.9.0"
+  },
+  "resolutions": {
+    "node-forge": "1.4.1"
   }
 }
